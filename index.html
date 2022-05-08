@@ -1,40 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Axel Broeglin Front End Developer</title>
+        <title>Axel Broeglin Front End Developer</title>
 
-    <!-- STYLESHEET -->
-    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" type="text/css" href="./styles/main.css">
 
-    <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-    <link rel="manifest" href="./images/site.webmanifest">
+        <!-- FAVICON -->
+        <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+        <link rel="manifest" href="./images/site.webmanifest">
 
-    <!-- FONTS -->
-    <!-- Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!-- Playfair -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
-</head>
+        <!-- FONTS -->
+        <!-- Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!-- Playfair -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
+    </head>
 
-<body>
+    <body>
+        <nav>
+            <h2>Axel Broeglin</h2>
+            <div class="menu-btn">
+                <div class="menu-btn__burger">https://www.youtube.com/watch?v=dIyVTjJAkLw&ab_channel=codeSTACKr</div>
+            </div>
+            <ul>
+                <li>HOME</li>
+                <li>WORK</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+            </ul>
+            <p>Based in Europe <br>
+            Speaks English <br>
+            and French</p>
+        </nav>
+        <main>
+            <!-- INTRODUCTION -->
+            <section>
+                <h2>FRONT END DEVELOPER</h2>
+                <picture>
+                    <source media="(max-width:767px)" srcset="./images/">
+                    <img src="./images/" alt="" >
+                </picture>
+                <h1>AXEL BROEGLIN</h1>
+            </section>
 
-    
+            <!-- FIRST PART -->
+            <section>
+                <p class="section-number">01/</p>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus tincidunt est rhoncus mollis. Nulla facilisi. Duis eu orci placerat, aliquet magna vitae, fermentum ligula. Aenean pulvinar erat non blandit consectetur.</p>            
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus tincidunt est rhoncus mollis. Nulla facilisi. Duis eu orci placerat, aliquet magna vitae, fermentum ligula. Aenean pulvinar erat non blandit consectetur.</p>
+                </div>
+                <p>Some of the tools I use</p>
+                <div>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <a href="">More about<span> me</span></a>
+            </section>
+        
+            <!-- SECOND PART -->
+            <section>
+                <p><span class="section-number">02/</span>RECENT WORKS</p>
 
+                <!-- FIRST WORK -->
+                <article>
+                    <h3>Time tracking dashboard</h3>
+                    <p class="work-desc"></p>  <!-- To be hidden on mobile OR desk, to be decided -->
+                    <a href="">  <!--  Hover to be thought, cursor to be changed with "See site" or smth -->
+                        <picture>
+                            <source media="(max-width:767px)" srcset="./images/">
+                            <img src="./images/" alt="" >
+                        </picture>
+                    </a>
+                    <div>
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <a href="">See<span> more</span></a>
+                    </div>
+                </article>
 
+                <!-- SECOND WORK -->
+                <article>
+                    <h3>Time tracking dashboard</h3>
+                <p class="work-desc"></p>  <!-- To be hidden on mobile OR desk, to be decided -->
+                <a href="">  <!--  Hover to be thought, cursor to be changed with "See site" or smth -->
+                        <picture>
+                            <source media="(max-width:767px)" srcset="./images/">
+                            <img src="./images/" alt="" >
+                        </picture>
+                    </a>
+                    <div>
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <a href="">See<span> more</span></a>
+                    </div>
+                </article>
 
+                <a href="">All my <span>recent works</span></a>
+            </section>
 
+            <!-- THIRD PART -->
+            <section>
+                <p><span class="section-number">03/</span>CONTACT</p>
+                <p id="email-adress">HELLO<br>
+                @AXELBROEGLIN<br>
+                .DEV</p>
+            </section>
 
-    <script src="./scripts/app.js"></script>
-</body>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Axel Broeglin</p>
+            <p>2022</p>
+            <img src="" alt="">
+            <a href=""><p>Privacy Policy</p></a>
+        </footer>
+        
+        <script src="./scripts/app.js"></script>
+    </body>
 </html>
