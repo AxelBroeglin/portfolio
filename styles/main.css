@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /****************/
 /**** RESET  ***/
 /**************/
@@ -313,5 +314,47 @@ nav {
 .menu-btn.open .menu-btn__burger::after {
   -webkit-transform: rotate(-45deg) translate(35px, 35px);
           transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.button {
+  padding-top: 2vh;
+  text-align: right;
+}
+
+.button__link {
+  color: #333333;
+  font-size: 1.3em;
+  display: inline-block;
+  position: relative;
+  /*
+        > span{
+            Doit être souligné
+        }
+        */
+}
+
+.button__link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #333333;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.button__link:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
 }
 /*# sourceMappingURL=main.css.map */
