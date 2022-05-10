@@ -143,6 +143,37 @@ h1 {
   padding-top: 7vh;
 }
 
+.first-section__txt {
+  font-size: 1.4em;
+}
+
+.tools-title {
+  padding-top: 4vh;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.tools-container {
+  padding-top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tools-container > img {
+  width: 10vh;
+  padding: 1em .7em 1em .7em;
+  display: inline-block;
+}
+
+/************ END OF FIRST SECTION *************/
+/************ SECOND SECTION *************/
+/************ END OF SECOND SECTION *************/
 h1, h2, ul > li {
   font-family: 'Playfair Display', serif;
   font-weight: 600;

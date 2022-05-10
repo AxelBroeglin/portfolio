@@ -31,6 +31,15 @@
 
 //PADDINGS
 
+@mixin p-top2{
+    padding-top: 2vh;
+}
+@mixin p-top3{
+    padding-top: 3vh;
+}
+@mixin p-top4{
+    padding-top: 4vh;
+}
 @mixin p-top5{
     padding-top: 5vh;
 }
