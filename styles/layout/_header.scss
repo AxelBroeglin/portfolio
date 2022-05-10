@@ -1,5 +1,5 @@
 nav{
-    color: #fff;
+    color: rgb(238, 238, 238);
 }
 
 .header-mobile{
@@ -10,7 +10,6 @@ nav{
 
 .menu-mobile{
     display: none;
-    opacity: 0;
     text-align: end;
     position: relative;
     top:25vh;
@@ -22,11 +21,34 @@ nav{
     }
 }
 
+/*********************/
+/**Mobile Items open**/
+/*********************/
 .shown{
     display:block;
-    opacity: 1;
+    -webkit-animation: fade-in .3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in .3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
+/*******************/  
+/**Nav full-screen**/
+/*******************/  
 .nav-open{
     height: 96vh;
 }

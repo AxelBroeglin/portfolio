@@ -113,7 +113,7 @@ h1, h2, ul > li {
 }
 
 nav {
-  color: #fff;
+  color: #eeeeee;
 }
 
 .header-mobile {
@@ -130,7 +130,6 @@ nav {
 
 .menu-mobile {
   display: none;
-  opacity: 0;
   text-align: end;
   position: relative;
   top: 25vh;
@@ -144,11 +143,36 @@ nav {
   font-size: 1.8em;
 }
 
+/*********************/
+/**Mobile Items open**/
+/*********************/
 .shown {
   display: block;
-  opacity: 1;
+  -webkit-animation: fade-in 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*******************/
+/**Nav full-screen**/
+/*******************/
 .nav-open {
   height: 96vh;
 }
