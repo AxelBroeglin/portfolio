@@ -94,8 +94,54 @@ select {
 
 /**************** End of Reset ***************/
 
+
+
+
+
+/***************** BODY ******************/
+
 body{
     padding: 4vh 10vw 0 10vw;
     background-color: $main-background;
     color: $font;
+}
+/**************** END OF BODY ************/
+
+
+
+
+
+/**************** INTRO ***************/
+
+.section-intro{
+    @include playfair500;
+    font-size: 2.2em;
+    line-height: 1.1;
+    padding-top: 8vh;
+    &--right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        @include p-top5;
+    }
+}
+h1{
+    @include p-top5;
+}
+.my-picture{
+    max-width: 40vw;  
+}
+
+/************** END OF INTRO ***********/
+
+
+
+
+
+/************ FIRST SECTION *************/
+
+.first-section{
+    @include p-top7;
+
 }

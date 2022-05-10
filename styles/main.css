@@ -97,10 +97,50 @@ select {
 }
 
 /**************** End of Reset ***************/
+/***************** BODY ******************/
 body {
   padding: 4vh 10vw 0 10vw;
   background-color: #cccccc;
   color: #333333;
+}
+
+/**************** END OF BODY ************/
+/**************** INTRO ***************/
+.section-intro {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 2.2em;
+  line-height: 1.1;
+  padding-top: 8vh;
+}
+
+.section-intro--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
+  padding-top: 5vh;
+}
+
+h1 {
+  padding-top: 5vh;
+}
+
+.my-picture {
+  max-width: 40vw;
+}
+
+/************** END OF INTRO ***********/
+/************ FIRST SECTION *************/
+.first-section {
+  padding-top: 7vh;
 }
 
 h1, h2, ul > li {
@@ -113,7 +153,7 @@ h1, h2, ul > li {
 }
 
 nav {
-  color: #eeeeee;
+  color: #333333;
 }
 
 .header-mobile {
@@ -199,10 +239,10 @@ nav {
 .menu-btn__burger {
   width: 50px;
   height: 6px;
-  background-color: #fff;
+  background-color: #333333;
   border-radius: 5px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .menu-btn__burger::before,
@@ -211,10 +251,10 @@ nav {
   position: absolute;
   width: 50px;
   height: 6px;
-  background-color: #fff;
+  background-color: #333333;
   border-radius: 5px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .menu-btn__burger::before {
@@ -227,7 +267,7 @@ nav {
           transform: translateY(16px);
 }
 
-/* ANIMATION */
+/****** ANIMATION ******/
 .menu-btn.open .menu-btn__burger {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);

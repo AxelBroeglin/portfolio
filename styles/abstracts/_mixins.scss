@@ -23,8 +23,17 @@
 @mixin playfair600{
     font-family :'Playfair Display', serif;
     font-weight:600;
-   
 }
 @mixin poppins{
     font-family: 'Poppins', sans-serif;  
+}
+
+
+//PADDINGS
+
+@mixin p-top5{
+    padding-top: 5vh;
+}
+@mixin p-top7{
+    padding-top: 7vh;
 }
