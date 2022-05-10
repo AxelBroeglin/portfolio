@@ -112,6 +112,10 @@ h1, h2, ul > li {
   font-family: 'Poppins', sans-serif;
 }
 
+nav {
+  color: #fff;
+}
+
 .header-mobile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -125,7 +129,28 @@ h1, h2, ul > li {
 }
 
 .menu-mobile {
+  display: none;
+  opacity: 0;
   text-align: end;
+  position: relative;
+  top: 25vh;
+}
+
+.menu-mobile__ul {
+  font-size: 3em;
+}
+
+.menu-mobile__info {
+  font-size: 1.8em;
+}
+
+.shown {
+  display: block;
+  opacity: 1;
+}
+
+.nav-open {
+  height: 96vh;
 }
 
 .menu-btn {
@@ -139,11 +164,12 @@ h1, h2, ul > li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 50px;
   cursor: pointer;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
+  margin: 0;
+  padding: 0;
 }
 
 .menu-btn__burger {
@@ -182,8 +208,6 @@ h1, h2, ul > li {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
   background: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .menu-btn.open .menu-btn__burger::before {
