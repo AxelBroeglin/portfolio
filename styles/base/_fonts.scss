@@ -1,4 +1,7 @@
-// Create a variable for each font and weight
-$playfair
-$poppins
-$
+h1, h2, ul>li{
+    @include playfair600;
+}
+
+.section-number, p, a{
+    @include poppins;
+}

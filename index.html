@@ -29,17 +29,19 @@
 
     <body>
         <nav>
-            <h2>Axel Broeglin</h2>
-            <div class="menu-btn">
-                <div class="menu-btn__burger">https://www.youtube.com/watch?v=dIyVTjJAkLw&ab_channel=codeSTACKr</div>
+            <div class="header-mobile">
+                <h2>Axel Broeglin</h2>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
             </div>
-            <ul>
+            <ul class="menu-mobile">
                 <li>HOME</li>
                 <li>WORK</li>
                 <li>ABOUT</li>
                 <li>CONTACT</li>
             </ul>
-            <p>Based in Europe <br>
+            <p class="menu-mobile">Based in Europe <br>
             Speaks English <br>
             and French</p>
         </nav>
@@ -48,8 +50,8 @@
             <section>
                 <h2>FRONT END DEVELOPER</h2>
                 <picture>
-                    <source media="(max-width:767px)" srcset="./images/">
-                    <img src="./images/" alt="" >
+                    <source media="(max-width:767px)" srcset="./images/temp-photo.jpg">
+                    <img src="./images/temp-photo.jpg" alt="" >
                 </picture>
                 <h1>AXEL BROEGLIN</h1>
             </section>
@@ -73,7 +75,7 @@
         
             <!-- SECOND PART -->
             <section>
-                <p><span class="section-number">02/</span>RECENT WORKS</p>
+                <h2><span class="section-number">02/</span>RECENT WORKS</h2>
 
                 <!-- FIRST WORK -->
                 <article>
@@ -118,7 +120,7 @@
 
             <!-- THIRD PART -->
             <section>
-                <p><span class="section-number">03/</span>CONTACT</p>
+                <h2><span class="section-number">03/</span>CONTACT</h2>
                 <p id="email-adress">HELLO<br>
                 @AXELBROEGLIN<br>
                 .DEV</p>
@@ -134,6 +136,6 @@
             <a href=""><p>Privacy Policy</p></a>
         </footer>
         
-        <script src="./scripts/app.js"></script>
+        <script src="./script/app.js"></script>
     </body>
 </html>

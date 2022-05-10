@@ -1,0 +1,30 @@
+// RESPONSIVE
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablet)){
+        @content;
+    }
+}
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}
+
+
+// FONTS
+@mixin playfair400{
+    font-family :'Playfair Display', serif;
+    font-weight:400;
+}
+@mixin playfair500{
+    font-family :'Playfair Display', serif;
+    font-weight:500;
+}
+@mixin playfair600{
+    font-family :'Playfair Display', serif;
+    font-weight:600;
+   
+}
+@mixin poppins{
+    font-family: 'Poppins', sans-serif;  
+}

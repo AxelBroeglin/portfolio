@@ -1,21 +1,20 @@
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
-@import 'abstracts/colors';
-@import 'abstracts/functions';
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './abstracts/colors';
+@import './abstracts/functions';
+@import './abstracts/maps';
 
-@import 'base/base';
-@import 'base/typography';
-@import 'base/helpers';
-@import 'base/fonts';
+@import './base/base';
+@import './base/typography';
+@import './base/helpers';
+@import './base/fonts';
 
-@import 'layout/navigation';
-@import 'layout/header';
-@import 'layout/footer';
+@import './layout/navigation';
+@import './layout/header';
+@import './layout/footer';
 
-@import 'components/buttons';
+@import './components/buttons';
 
-@import 'pages/home';
+@import './pages/home';
 
-@import 'vendor/normalize';
-
-@import 'themes/default';
+@import './vendor/normalize';
