@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/styles.css">
 
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section class="main-container">
+    <div class="main-state" id="main-state">
+      <div class="main-container__star-container">
+        <img class="main-container__star-container__star" src="/images/icon-star.svg" alt="">
+      </div>
+      <!-- Rating state start -->
+      <h1 class="main-container__h1">
+        How did we do?
+      </h1>
+      
+      <p class="main-container__p">      
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+
+      <div class="main-container__grade-main-container">
+        <div class="gradeContainer" id="1">1</div>  
+        <div class="gradeContainer" id="2">2</div>  
+        <div class="gradeContainer" id="3">3</div>  
+        <div class="gradeContainer" id="4">4</div>  
+        <div class="gradeContainer" id="5">5</div>  
+      </div>
+
+      <button type="button" id="main-container__button" class="main-container__button">
+        Submit
+      </button>
+    </div>
+  <!-- Rating state end -->
+  
+  <!-- Thank you state start -->
+  
+  <div class="ty-state" id="ty-state">
+    <img class="ty-state__img" src="/images/illustration-thank-you.svg" alt="">
+    <p class="ty-state__selection">
+      You selected <span class="grade-display" id="span-result"></span> out of 5
+    </p>
+  
+    <h1 class="ty-state__h1">
+      Thank you!
+    </h1>
+    
+    <p class="ty-state__p">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+
+  <!-- Thank you state end -->
+  </div>
+</section>  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>
