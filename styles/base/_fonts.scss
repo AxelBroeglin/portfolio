@@ -5,8 +5,6 @@
          url('../fonts/poppins-medium-webfont.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
-    poppins-medium-webfont.ttf
-
 }
 
 h1, h2, ul>li{
@@ -14,6 +12,6 @@ h1, h2, ul>li{
 }
 
 .section-number, p, a{
-    @include poppins;
+    font-family: 'Poppins', sans-serif;
 }
 
