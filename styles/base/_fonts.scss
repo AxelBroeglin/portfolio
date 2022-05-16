@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../fonts/poppins-medium-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-medium-webfont.woff') format('woff');
+         url('../fonts/poppins-medium-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    poppins-medium-webfont.ttf
+
+}
+
 h1, h2, ul>li{
     @include playfair600;
 }
@@ -5,3 +16,4 @@ h1, h2, ul>li{
 .section-number, p, a{
     @include poppins;
 }
+
