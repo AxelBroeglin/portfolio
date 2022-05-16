@@ -1,0 +1,218 @@
+
+/**** Body ****/
+body{
+    background-color: hsl(270, 20%, 96%);
+    position: absolute;
+  }
+  
+  /**** Phone ****/
+  .phone{
+    position: relative;
+    left: calc(135px / 2);
+    width:240px;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 10px;
+    margin: 50px 0 0 0;
+    -webkit-box-shadow: 13px 14px 40px 7px rgba(0,0,0,0.32); 
+      box-shadow: 13px 14px 40px 7px rgba(0,0,0,0.32);
+  }
+  
+  /**** Phone Screen ****/
+  .phone__screen{
+    position: relative;
+  }
+  
+  
+  /**** Phone Bubble ****/
+  .phone__bubble{
+    width:30vw;
+    position: absolute;
+    width: 50%;
+    height: 2.5vh;
+    background-color: white;
+    left: 25%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+  
+  .header{
+    background-image: linear-gradient(to left, hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
+    border-radius: 1.5rem 1.5rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__container{
+      display: flex;
+      align-items: center;
+      margin: 30px 0 10px 10px;
+    }
+    &__container>*{
+      margin-left: 7px;
+    }
+    &__avatar{
+      border-radius: 50%;
+      border: 2px solid white;
+      width: 27px;
+      height: 27px;
+    }
+    &__text{
+      display: flex;
+      flex-direction: column;
+    }
+    &__text h2{
+      font-size: 12px;
+      opacity: 0.8;
+      font-weight: 500;
+    }
+    &__text p{
+      font-size: 10px;
+      opacity: 0.5;
+    }
+    &__text-white{
+      color: white;
+    }
+    &__dots{
+      transform: rotate(90deg);
+      margin-right: 10px;
+    } 
+  }
+  .conversation{
+    background-color: hsl(270, 20%, 96%);
+    padding: 10px;
+    position: relative;
+    border-radius: 0 0 15px 15px;
+    &__message{
+      width: 70%;
+      font-size: 9px;
+      font-weight: 500;
+      margin-bottom: 7px;
+      padding: 7px;
+      &--received{
+        background-color: hsl(272, 41%, 93%);
+        color: hsl(276, 55%, 52%);
+        border-radius: 10px 10px 10px 5px;
+      }
+      &--sent{
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(271, 15%, 43%);
+        border-radius: 10px 10px 5px 10px;
+        }
+      }
+    &__pictures{
+      display: flex;
+      flex-direction: row-reverse;
+      margin-bottom: 10px;
+    }
+    &__picture-sent{
+      display: inline-block;
+      width: 40px;
+      border-radius: 10px;
+      margin-left: 5px;
+    }
+    &__typing-box{
+      width:100%;
+      background-color: white;
+      border-radius: 50px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &--send-button{
+        color: white;
+        background-color: rgb(21, 9, 29);
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 18px;
+      }
+    }
+    &__typing-box p{
+      color: hsl(300, 1%, 79%);
+      margin-left: 20px;
+      font-size: 10px;
+    }
+  }
+  .conversation__message-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .conversation-cta{
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
+    padding: 5px;
+    width: 80%;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__label{
+      font-size: 10px;
+      opacity: 0.5;
+      color: white;
+      margin-left: 5px;
+    }
+    &__price{
+      color: white;
+      font-weight: 500;
+    }
+  }
+  .presentation-text{
+    margin-top: 20px;
+    text-align: center;
+    padding: 30px;
+    line-height: 1.5;
+    &__title{
+      color: rgb(36, 14, 46);
+      font-weight: 500;
+      margin-bottom: 20px;
+      font-size: 40px;
+    }
+    &__p{
+      font-weight: 400;
+      color: hsl(0, 0%, 62%);
+      opacity: 0.8;
+    }
+  }
+  
+  .bg{
+    position: absolute;
+    z-index: 0;
+    width: 50vw;
+    height: 80vh;
+    border-radius:100% 0% 100% 0% / 0% 0% 50% 100%;
+    background-image: linear-gradient(to bottom, hsl(293, 100%, 63%) , hsl(264, 100%, 61%));
+  }
+  .bg2{
+    display:none;
+  }
+  
+  @media only screen and (min-width: 900px) {
+    .bg {
+      left:-40vh;
+      width:50vw;
+      height: 90vh;
+      border-radius:0% 0% 100% 100% / 100% 100% 100% 100%;
+    }
+    .container-flex{
+      top:15vh;
+      display: flex;
+      width: 80vw;
+      left: 10vw;
+      align-items: center;
+      position: relative;
+      justify-content: space-evenly;
+    }
+    .phone{
+    margin: 0;
+    left:0;
+    }
+    .presentation-text{
+      width: 50%;
+    }
+  }
