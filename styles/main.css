@@ -175,6 +175,13 @@ h1 {
 /************ END OF FIRST SECTION *************/
 /************ SECOND SECTION *************/
 /************ END OF SECOND SECTION *************/
+@font-face {
+  font-family: 'poppinsmedium';
+  src: url("../fonts/poppins-medium-webfont.woff2") format("woff2"), url("../fonts/poppins-medium-webfont.woff") format("woff"), url("../fonts/poppins-medium-webfont.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1, h2, ul > li {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
