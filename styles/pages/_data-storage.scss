@@ -1,0 +1,62 @@
+html{
+    font-size: 100%; //to let user easily zoom
+    box-sizing: border-box; //padding and borders will be included in the final width and height
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+    background-image: url("../images/bg-mobile.png");
+}
+
+.container{
+    position: relative;
+    width:calc(100vw - 10vw);
+    top:20vh;
+    left: 5vw;
+}
+
+.header, .usage{
+    background-color: $dark-blue;
+    border-radius: 0.625rem 1.625rem 0.625rem 0.625rem;
+}
+
+.usage{
+    border-radius: 0.625rem;
+    
+    &__box{
+        background-color: white;
+        width:50vw;
+        padding: 0.625rem;
+        border-radius: 0.625rem;
+        position: relative;
+        bottom: 0;
+        transform: translate(40%, 50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:hsla(0, 0%, 85%, 1);
+        
+
+        &--grey-uppercase{
+            text-transform: uppercase;
+            color: grey;
+            font-weight: 700;
+        }
+        &--mega-bold{
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: hsl(229, 57%, 11%);
+            margin-right: 0.3rem;
+        }
+    }
+    
+}
