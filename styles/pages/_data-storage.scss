@@ -7,7 +7,7 @@ html{
     box-sizing: inherit;
 }
 
-body{
+#body-ds{
     position: absolute;
     padding: 0;
     margin: 0;
@@ -17,14 +17,14 @@ body{
     background-image: url("../images/bg-mobile.png");
 }
 
-.container{
+.container-ds{
     position: relative;
     width:calc(100vw - 10vw);
     top:20vh;
     left: 5vw;
 }
 
-.header, .usage{
+.header-ds, .usage{
     background-color: $dark-blue;
     border-radius: 0.625rem 1.625rem 0.625rem 0.625rem;
 }
