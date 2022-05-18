@@ -12,7 +12,7 @@ const gradeContainers = document.querySelectorAll('.gradeContainer');
 //Creates let to display result
 let gradeDisplay = document.getElementById('span-result');
 // Submit button
-const submitBtn = document.getElementById('main-container__button');
+const submitBtn = document.getElementById('main-container-ir__button');
 //First state/div
 const mainState = document.getElementById('main-state');
 // Final state/div
@@ -31,13 +31,13 @@ gradeContainers.forEach((gradeContainer) => {
       gradeDisplay.innerHTML = idElt;
       //Remove Active state
       gradeContainers.forEach((gradeContainer) => {
-        gradeContainer.classList.remove('active');
+        gradeContainer.classList.remove('active-ir');
       });
-      if (gradeContainer.classList.contains("active")) {
-        gradeContainer.classList.remove("active");
+      if (gradeContainer.classList.contains("active-ir")) {
+        gradeContainer.classList.remove("active-ir");
       }
       else {
-       gradeContainer.classList.add("active");
+       gradeContainer.classList.add("active-ir");
       }
   });
 });

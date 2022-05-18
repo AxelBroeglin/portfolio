@@ -1,5 +1,5 @@
 
-body{
+#body-ir{
     background-color: hsl(216, 12%, 8%);
     position: relative;
     display: flex;
@@ -8,7 +8,7 @@ body{
     font-family: 'Overpass', sans-serif;
 }
 
-.main-container{
+.main-container-ir{
     background-color: hsl(213, 19%, 18%);
     position: absolute;
     width: 94vw;
@@ -79,7 +79,7 @@ body{
     cursor: pointer;
 }
 
-.active{
+.active-ir{
   background-color: hsl(25, 97%, 53%);
   color: white;
 }
