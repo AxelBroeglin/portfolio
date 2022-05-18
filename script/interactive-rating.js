@@ -19,7 +19,6 @@ const mainState = document.getElementById('main-state');
 const tyState = document.getElementById('ty-state');
 
 let idElt = null;
-console.log(idElt)
 //Add class Active to clicked grade
 gradeContainers.forEach((gradeContainer) => {
     gradeContainer.addEventListener('click', () => {
