@@ -371,7 +371,7 @@ nav {
           transform-origin: bottom right;
 }
 
-body {
+#body-ag {
   height: 100vh;
   background-color: #1d2c67;
   display: -webkit-box;
@@ -382,7 +382,7 @@ body {
           justify-content: center;
 }
 
-main {
+#main-ag {
   background-color: #323a49;
   width: 90vw;
   height: -webkit-fit-content;
@@ -405,12 +405,12 @@ main {
 }
 
 @media screen and (min-width: 1201px) {
-  main {
+  #main-ag {
     max-width: 50vw;
   }
 }
 
-main > * {
+#main-ag > * {
   padding-bottom: 1.5em;
 }
 
@@ -438,7 +438,7 @@ main > * {
 }
 
 /**** Body ****/
-body {
+#body-ca {
   background-color: #f5f3f7;
   position: absolute;
 }
@@ -744,7 +744,7 @@ html {
           box-sizing: inherit;
 }
 
-body {
+#body-ds {
   position: absolute;
   padding: 0;
   margin: 0;
@@ -754,14 +754,14 @@ body {
   background-image: url("../images/bg-mobile.png");
 }
 
-.container {
+.container-ds {
   position: relative;
   width: calc(100vw - 10vw);
   top: 20vh;
   left: 5vw;
 }
 
-.header, .usage {
+.header-ds, .usage {
   background-color: #1d2c67;
   border-radius: 0.625rem 1.625rem 0.625rem 0.625rem;
 }
@@ -804,7 +804,7 @@ body {
   margin-right: 0.3rem;
 }
 
-body {
+#body-ir {
   background-color: #121417;
   position: relative;
   display: -webkit-box;
@@ -819,7 +819,7 @@ body {
   font-family: 'Overpass', sans-serif;
 }
 
-.main-container {
+.main-container-ir {
   background-color: #252d37;
   position: absolute;
   width: 94vw;
@@ -829,7 +829,7 @@ body {
   max-width: 340px;
 }
 
-.main-container__star-container {
+.main-container-ir__star-container {
   background-color: #303a46;
   border-radius: 50%;
   width: 40px;
@@ -846,23 +846,23 @@ body {
   margin-bottom: 15px;
 }
 
-.main-container__star-container__star {
+.main-container-ir__star-container__star {
   width: 15px;
   height: 15px;
 }
 
-.main-container__h1, .main-container .ty-state__h1 {
+.main-container-ir__h1, .main-container-ir .ty-state__h1 {
   color: white;
   margin-bottom: 15px;
   font-weight: 700;
 }
 
-.main-container__p, .main-container .ty-state__p {
+.main-container-ir__p, .main-container-ir .ty-state__p {
   color: #959eac;
   margin-bottom: 15px;
 }
 
-.main-container__grade-main-container {
+.main-container-ir__grade-main-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -872,7 +872,7 @@ body {
   margin-bottom: 10px;
 }
 
-.main-container__button {
+.main-container-ir__button {
   background-color: #fb7413;
   border: none;
   width: 100%;
@@ -882,7 +882,7 @@ body {
   border-radius: 25px;
 }
 
-.main-container__button:hover {
+.main-container-ir__button:hover {
   cursor: pointer;
 }
 
@@ -910,7 +910,7 @@ body {
   cursor: pointer;
 }
 
-.active {
+.active-ir {
   background-color: #fb7413;
   color: white;
 }
