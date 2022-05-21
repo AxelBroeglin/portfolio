@@ -1,7 +1,7 @@
 <header>
     <nav class="nav-mobile">
         <div class="header-mobile">
-            <h2>Axel Broeglin</h2>
+            <h2> Broeglin</h2>
             <div class="menu-btn">
                 <div class="menu-btn__burger"></div>
             </div>
