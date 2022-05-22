@@ -174,7 +174,27 @@ body {
 
 /************ END OF FIRST SECTION *************/
 /************ SECOND SECTION *************/
+.second-section {
+  padding-top: 7vh;
+}
+
+.second-section > article {
+  padding-top: 3vh;
+}
+
 /************ END OF SECOND SECTION *************/
+/************ THIRD SECTION *************/
+.third-section {
+  padding-top: 7vh;
+}
+
+#email-adress {
+  padding-top: 4vh;
+  font-size: 3em;
+  line-height: 1;
+}
+
+/************ END OF THIRD SECTION *************/
 @font-face {
   font-family: 'poppinsregular';
   src: url("../fonts/poppins-regular-webfont.woff") format("woff"), url("../fonts/poppins-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-regular-webfont.ttf") format("ttf");
@@ -339,6 +359,7 @@ nav {
   font-size: 1.3em;
   display: inline-block;
   position: relative;
+  padding-top: 2vh;
   /*
         > span{
             Doit être souligné

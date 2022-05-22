@@ -172,6 +172,13 @@ body{
 
 /************ SECOND SECTION *************/
 
+.second-section{
+  @include p-top7;
+  > article{
+    @include p-top3;
+  }
+}
+
 
 
 /************ END OF SECOND SECTION *************/
@@ -181,3 +188,15 @@ body{
 
 
 
+/************ THIRD SECTION *************/
+
+.third-section{
+  @include p-top7;
+}
+
+#email-adress{
+  @include p-top4;
+  font-size: 3em;
+  line-height: 1;
+}
+/************ END OF THIRD SECTION *************/
