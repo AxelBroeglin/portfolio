@@ -6,6 +6,7 @@
         font-size: 1.3em;
         display: inline-block;
         position: relative;
+        @include p-top2;
         &:after{
             content: '';
             position: absolute;
