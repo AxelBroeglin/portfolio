@@ -182,6 +182,24 @@ body {
   padding-top: 3vh;
 }
 
+.second-section > article > h3 {
+  padding-bottom: 1em;
+}
+
+.work-info-container {
+  padding-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.work-info-container > img {
+  width: 15vw;
+}
+
 /************ END OF SECOND SECTION *************/
 /************ THIRD SECTION *************/
 .third-section {
@@ -359,7 +377,6 @@ nav {
   font-size: 1.3em;
   display: inline-block;
   position: relative;
-  padding-top: 2vh;
   /*
         > span{
             Doit être souligné

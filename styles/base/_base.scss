@@ -176,9 +176,20 @@ body{
   @include p-top7;
   > article{
     @include p-top3;
+    > h3{
+      padding-bottom: 1em;
+    }
   }
 }
 
+.work-info-container{
+  @include p-top3;
+  display: flex;
+  justify-content: space-evenly;
+  > img {
+    width: 15vw;
+  }
+}
 
 
 /************ END OF SECOND SECTION *************/
