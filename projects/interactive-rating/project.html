@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../../images/favicon/site.webmanifest">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body id="body-ir">
+
+  <section class="main-container-ir">
+    <div class="main-state" id="main-state">
+      <div class="main-container-ir__star-container">
+        <img class="main-container-ir__star-container__star" src="../../images/interactive-rating/icon-star.svg" alt="">
+      </div>
+      <!-- Rating state start -->
+      <h1 class="main-container-ir__h1">
+        How did we do?
+      </h1>
+      
+      <p class="main-container-ir__p">      
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+
+      <div class="main-container-ir__grade-main-container">
+        <div class="gradeContainer" id="1">1</div>  
+        <div class="gradeContainer" id="2">2</div>  
+        <div class="gradeContainer" id="3">3</div>  
+        <div class="gradeContainer" id="4">4</div>  
+        <div class="gradeContainer" id="5">5</div>  
+      </div>
+
+      <button type="button" id="main-container-ir__button" class="main-container-ir__button">
+        Submit
+      </button>
+    </div>
+  <!-- Rating state end -->
+  
+  <!-- Thank you state start -->
+  
+  <div class="ty-state" id="ty-state">
+    <img class="ty-state__img" src="../../images/interactive-rating/illustration-thank-you.svg" alt="">
+    <p class="ty-state__selection">
+      You selected <span class="grade-display" id="span-result"></span> out of 5
+    </p>
+  
+    <h1 class="ty-state__h1">
+      Thank you!
+    </h1>
+    
+    <p class="ty-state__p">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </p>
+
+  <!-- Thank you state end -->
+  </div>
+</section>  
+
+<script src="../../script/interactive-rating.js"></script>
+
+</body>
+</html>
