@@ -23,7 +23,9 @@
 
 
 //PADDINGS
-
+@mixin p-top1{
+    padding-top: 1vh;
+}
 @mixin p-top2{
     padding-top: 2vh;
 }
@@ -36,8 +38,30 @@
 @mixin p-top5{
     padding-top: 5vh;
 }
+@mixin p-top6{
+    padding-top: 6vh;
+}
 @mixin p-top7{
     padding-top: 7vh;
+}
+
+@mixin p-bottom2{
+    padding-bottom: 2vh;
+}
+@mixin p-bottom3{
+    padding-bottom: 3vh;
+}
+@mixin p-bottom4{
+    padding-bottom: 4vh;
+}
+@mixin p-bottom5{
+    padding-bottom: 5vh;
+}
+@mixin p-bottom6{
+    padding-bottom: 6vh;
+}
+@mixin p-bottom7{
+    padding-bottom: 7vh;
 }
 
 

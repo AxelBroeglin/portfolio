@@ -914,7 +914,16 @@ nav {
   text-align: center;
 }
 
+.project__h1 {
+  padding-top: 6vh;
+}
+
+.project__p {
+  padding-top: 1vh;
+}
+
 .project__col-container {
+  padding-top: 2vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -949,5 +958,13 @@ nav {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: link;
+}
+
+.project__pic {
+  padding-top: 2vh;
+}
+
+.project__h2 {
+  padding-top: 2vh;
 }
 /*# sourceMappingURL=main.css.map */

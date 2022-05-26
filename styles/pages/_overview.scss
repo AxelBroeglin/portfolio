@@ -1,14 +1,29 @@
-.project__col-container{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "header header"
-      "stack code"
-      "stack link"; 
-  }
-  .project__col--header { grid-area: header; }
-  .project__col--stack { grid-area: stack; }
-  .project__col--code { grid-area: code; }
-  .project__col--link { grid-area: link; }
+.project{
+    &__h1{
+        @include p-top6;
+    }
+    &__p{
+        @include p-top1;
+    }
+    &__col-container{
+        @include p-top2;
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "header header"
+          "stack code"
+          "stack link"; 
+      }
+    &__col--header { grid-area: header; }
+    &__col--stack { grid-area: stack; }
+    &__col--code { grid-area: code; }
+    &__col--link { grid-area: link; } 
+    &__pic{
+        @include p-top2;
+    }
+    &__h2{
+        @include p-top2;
+    }
+}
