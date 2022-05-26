@@ -1,0 +1,14 @@
+.project__col-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header"
+      "stack code"
+      "stack link"; 
+  }
+  .project__col--header { grid-area: header; }
+  .project__col--stack { grid-area: stack; }
+  .project__col--code { grid-area: code; }
+  .project__col--link { grid-area: link; }

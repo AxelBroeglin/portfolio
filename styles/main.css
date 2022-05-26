@@ -913,4 +913,41 @@ nav {
 .ty-state__p {
   text-align: center;
 }
+
+.project__col-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+      grid-template-areas: "header header" "stack code" "stack link";
+}
+
+.project__col--header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+.project__col--stack {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: stack;
+}
+
+.project__col--code {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: code;
+}
+
+.project__col--link {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: link;
+}
 /*# sourceMappingURL=main.css.map */
