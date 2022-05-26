@@ -967,4 +967,8 @@ nav {
 .project__h2 {
   padding-top: 2vh;
 }
+
+.project__col > a {
+  font-weight: bold;
+}
 /*# sourceMappingURL=main.css.map */
