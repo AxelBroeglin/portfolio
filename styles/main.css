@@ -101,7 +101,7 @@ select {
 /***************** BODY ******************/
 body {
   padding: 4vh 10vw 0 10vw;
-  background-color: #cccccc;
+  background-color: #ebebeb;
   color: #333333;
 }
 
@@ -962,6 +962,7 @@ nav {
 
 .project__pic {
   padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .project__h2 {
