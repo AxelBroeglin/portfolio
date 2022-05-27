@@ -38,6 +38,14 @@
             }
         }
     }
+    &__footer{
+        position: fixed;
+        bottom: 0;
+        width: 80%;
+        height: 5vh;
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 input:focus, textarea:focus {
