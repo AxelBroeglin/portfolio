@@ -98,14 +98,18 @@ select {
 
 
 
-/***************** BODY ******************/
+/***************** GENERAL ******************/
 
 body{
     padding: 4vh 10vw 0 10vw;
     background-color: $main-background;
     color: $font;
 }
-/**************** END OF BODY ************/
+h1, h2, h3, .link{
+  color:$dark-red;
+}
+
+/**************** END OF GENERAL ************/
 
 
 
