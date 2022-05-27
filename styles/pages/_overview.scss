@@ -22,6 +22,7 @@
     &__col--link { grid-area: link; } 
     &__pic{
         @include p-top2;
+        @include p-bottom2;
     }
     &__h2{
         @include p-top2;
