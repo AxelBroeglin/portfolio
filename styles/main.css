@@ -231,11 +231,11 @@ h1, h2, h3, .link {
   font-style: normal;
 }
 
-#h1, h2, ul > li {
+#h1, ul > li {
   font-family: 'Playfair Display', serif;
 }
 
-.section-number, p, a {
+.section-number, p, a, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -965,7 +965,7 @@ nav {
 }
 
 .project__pic {
-  padding-top: 2vh;
+  padding-top: 4vh;
   padding-bottom: 2vh;
 }
 
@@ -975,5 +975,84 @@ nav {
 
 .project__col > a {
   font-weight: bold;
+}
+
+.contact {
+  padding-top: 4vh;
+}
+
+.contact__h1 {
+  text-align: center;
+  padding-top: 4vh;
+}
+
+.contact > p {
+  padding-bottom: 2vh;
+}
+
+.contact__fields {
+  width: 100%;
+  padding-bottom: 1vh;
+  background: 0 0;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  padding-left: 1vw;
+}
+
+.contact__message {
+  border: 0;
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 15vh;
+  padding-left: 1vw;
+  padding-top: 1vh;
+}
+
+.contact__button-container {
+  text-align: right;
+}
+
+input:focus, textarea:focus {
+  outline-width: 0;
+  color: #fff;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
