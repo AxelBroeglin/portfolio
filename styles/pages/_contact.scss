@@ -26,6 +26,17 @@
     }
     &__button-container{
         text-align: right;
+        &__button{
+            border: none;
+            padding:1.5vh;
+            background-color: hsla(0,0%,100%,.2);
+            color: $white;
+            font-weight: bold;
+            &:hover{
+                -webkit-box-shadow: 0px 0px 20px 10px rgba(176,176,176,0.3); 
+                box-shadow: 0px 0px 20px 10px rgba(176,176,176,0.3);
+            }
+        }
     }
 }
 
@@ -33,16 +44,13 @@ input:focus, textarea:focus {
     outline-width: 0;
     color: $white;
 }
-
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: $white;
     opacity: 1; /* Firefox */
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $white;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: $white;
-  }
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: $white;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+color: $white;
+}

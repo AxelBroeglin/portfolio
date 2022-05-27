@@ -1013,6 +1013,19 @@ nav {
   text-align: right;
 }
 
+.contact__button-container__button {
+  border: none;
+  padding: 1.5vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-weight: bold;
+}
+
+.contact__button-container__button:hover {
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(176, 176, 176, 0.3);
+  box-shadow: 0px 0px 20px 10px rgba(176, 176, 176, 0.3);
+}
+
 input:focus, textarea:focus {
   outline-width: 0;
   color: #fff;
