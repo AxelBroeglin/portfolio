@@ -39,12 +39,10 @@
         }
     }
     &__footer{
+        padding-top: 0;
+        width: 80%;
         position: fixed;
         bottom: 0;
-        width: 80%;
-        height: 5vh;
-        display: flex;
-        justify-content: space-around;
     }
 }
 
