@@ -1,0 +1,9 @@
+footer{
+    @include p-top6;
+    @include p-bottom6;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+// Does not work on homepage
