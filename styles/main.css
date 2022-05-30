@@ -1116,4 +1116,8 @@ input:focus, textarea:focus {
 #projects-container > article {
   padding-top: 2vh;
 }
+
+#projects-container > picture {
+  padding-top: 1vh;
+}
 /*# sourceMappingURL=main.css.map */

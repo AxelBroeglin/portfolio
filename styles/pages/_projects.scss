@@ -5,4 +5,7 @@
     >article{
         @include p-top2;
     }
+    >picture{
+        @include p-top1;
+    }
 }
