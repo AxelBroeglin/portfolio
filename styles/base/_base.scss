@@ -132,9 +132,6 @@ h1, h2, h3, .link{
 #h1{
     @include p-top5;
 }
-.my-picture{
-    max-width: 40vw;  
-}
 
 /************** END OF INTRO ***********/
 
@@ -150,6 +147,10 @@ h1, h2, h3, .link{
         font-size: 1.4em;
     }
 }
+.my-picture{
+  display: none;
+  max-width: 40vw;  
+}
 .tools-title{
     @include p-top4;
     text-align: center;
@@ -160,10 +161,14 @@ h1, h2, h3, .link{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    >img{
-        width: 10vh;
-        padding: 1em .7em 1em .7em;
-        display: inline-block;
+    >figure{
+      width: 15vh;
+      padding: 1em .7em 1em .7em;
+      display: inline-block;
+        >figcaption{
+          text-align: center;
+          @include p-top1;
+        }
     }
 }
 
@@ -206,11 +211,20 @@ h1, h2, h3, .link{
 
 .third-section{
   @include p-top7;
-}
-
-#email-adress{
-  @include p-top4;
-  font-size: 3em;
-  line-height: 1;
+  &__p{
+    @include p-top4;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  &__button-container{
+    @include p-top3;
+    display: flex;
+    justify-content: center;
+  }
+  &__button{
+    border: none;
+    padding: 1em;
+    color: $font;
+  }
 }
 /************ END OF THIRD SECTION *************/

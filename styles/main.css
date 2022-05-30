@@ -138,10 +138,6 @@ h1, h2, h3, .link {
   padding-top: 5vh;
 }
 
-.my-picture {
-  max-width: 40vw;
-}
-
 /************** END OF INTRO ***********/
 /************ FIRST SECTION *************/
 .first-section {
@@ -150,6 +146,11 @@ h1, h2, h3, .link {
 
 .first-section__txt {
   font-size: 1.4em;
+}
+
+.my-picture {
+  display: none;
+  max-width: 40vw;
 }
 
 .tools-title {
@@ -170,10 +171,15 @@ h1, h2, h3, .link {
           justify-content: center;
 }
 
-.tools-container > img {
-  width: 10vh;
+.tools-container > figure {
+  width: 15vh;
   padding: 1em .7em 1em .7em;
   display: inline-block;
+}
+
+.tools-container > figure > figcaption {
+  text-align: center;
+  padding-top: 1vh;
 }
 
 /************ END OF FIRST SECTION *************/
@@ -210,10 +216,26 @@ h1, h2, h3, .link {
   padding-top: 7vh;
 }
 
-#email-adress {
+.third-section__p {
   padding-top: 4vh;
-  font-size: 3em;
-  line-height: 1;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.third-section__button-container {
+  padding-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.third-section__button {
+  border: none;
+  padding: 1em;
+  color: #565656;
 }
 
 /************ END OF THIRD SECTION *************/
@@ -231,11 +253,11 @@ h1, h2, h3, .link {
   font-style: normal;
 }
 
-#h1, ul > li {
+ul > li {
   font-family: 'Playfair Display', serif;
 }
 
-.section-number, p, a, h2, h3 {
+.section-number, p, a, h1, h2, h3, figcaption {
   font-family: 'Poppins', sans-serif;
 }
 
@@ -369,6 +391,17 @@ nav {
 .menu-btn.open .menu-btn__burger::after {
   -webkit-transform: rotate(-45deg) translate(35px, 35px);
           transform: rotate(-45deg) translate(35px, 35px);
+}
+
+footer {
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .button {
@@ -1027,15 +1060,10 @@ nav {
 }
 
 .contact__footer {
+  padding-top: 0;
+  width: 80%;
   position: fixed;
   bottom: 0;
-  width: 80%;
-  height: 5vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 input:focus, textarea:focus {
