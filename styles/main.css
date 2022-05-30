@@ -109,6 +109,11 @@ h1, h2, h3, .link {
   color: #76323f;
 }
 
+h1 {
+  text-align: center;
+  padding-top: 4vh;
+}
+
 /**************** END OF GENERAL ************/
 /**************** INTRO ***************/
 .section-intro {
@@ -1014,11 +1019,6 @@ footer {
   padding-top: 4vh;
 }
 
-.contact__h1 {
-  text-align: center;
-  padding-top: 4vh;
-}
-
 .contact > p {
   padding-bottom: 2vh;
 }
@@ -1107,5 +1107,13 @@ input:focus, textarea:focus {
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #fff;
+}
+
+#projects-container > h1 {
+  padding-bottom: 2vh;
+}
+
+#projects-container > article {
+  padding-top: 2vh;
 }
 /*# sourceMappingURL=main.css.map */

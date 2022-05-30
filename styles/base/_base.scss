@@ -108,6 +108,10 @@ body{
 h1, h2, h3, .link{
   color:$dark-red;
 }
+h1{
+  text-align: center;
+  @include p-top4;
+}
 /**************** END OF GENERAL ************/
 
 

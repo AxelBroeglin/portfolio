@@ -1,9 +1,5 @@
 .contact{
     @include p-top4;
-    &__h1{
-        text-align: center;
-        @include p-top4;
-    }
     > p{
         @include p-bottom2;
     }
