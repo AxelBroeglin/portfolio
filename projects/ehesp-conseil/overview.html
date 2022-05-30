@@ -5,19 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Axel Broeglin Recent Works</title>
+        <title>Axel Broeglin Front End Developer</title>
 
         <!-- STYLESHEET -->
-        <link rel="stylesheet" type="text/css" href="./styles/main.css">
+        <link rel="stylesheet" type="text/css" href="../../styles/main.css">
 
         <!-- FAVICON -->
-        <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./images/favicon/site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../images/favicon/site.webmanifest">
     </head>
-
-    <body>
+<body>
+    <header>
         <nav class="nav-mobile">
             <div class="header-mobile">
                 <h2>Axel Broeglin</h2>
@@ -27,28 +27,72 @@
             </div>
             <div class="menu-mobile">
                 <ul class="menu-mobile__ul">
-                    <li>HOME</li>
-                    <li>WORKS</li>
-                    <li>ABOUT</li>
-                    <li>CONTACT</li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
                 <p class="menu-mobile__info">Based in Europe <br>
                 Speaks English <br>
                 and French</p>
             </div>
         </nav>
+    </header>
+    <h1 class="project__h1">EHESP Conseil</h1>
+    
+    <!-- Quick description -->
+    <p class="project__p">A quick exercise created by Front End Mentor that makes you use an API and manipulate the data it brings.</p>
+
+    <article class="project__desc">
+        <!-- Project technical description and links -->
+        <div class="project__col-container">
+            <div class="project__col project__col--header">
+                <h3>Type</h3>
+                <p>Order for a customer</p>
+            </div>
+            <div class="projec__col project__col--stack">
+                <h3>Stack</h3>
+                <p>HTML <br>
+                CSS <br>
+                Wordpress <br>
+                Javascript</p>
+            </div>
+            <div class="project__col project__col--link">
+                <h3>Link</h3>
+                <a href="https://www.ehespconseil.fr" target="_blank" class="link">Project</a>
+            </div>
+        </div>
+
+        <!-- Application screenshot -->
+        <picture class="project__pic">
+            <source media="(max-width:900px)" srcset="../../images\screenshot-ehesp-desk.png">
+            <img src="../../images\screenshot-ehesp-desk.png" alt="" >
+        </picture>
+    </article>
 
 
+    <h2 class="project__h2">Project purpose and goal</h2>
+    <p class="project__p"></p>
 
-        <!-- FOOTER -->
-        <footer>
-            <p>Axel Broeglin</p>
-            <p>2022</p>
-            <img src="" alt="">
-            <a href="privacy-policy.html"><p>Privacy Policy</p></a>
-        </footer>
-        
-        
-        <script src="./script/app.js"></script>
-    </body>
+    <h2 class="project__h2">Web Stack choice</h2>
+    <p class="project__p"></p>
+
+    <h2 class="project__h2">Thought process</h2>
+    <p class="project__p"></p>
+
+    <h2 class="project__h2">Lesson learned</h2>
+    <p class="project__p"></p>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Axel Broeglin</p>
+        <p>2022</p>
+        <img src="" alt="">
+        <a href="privacy-policy.html"><p>Privacy Policy</p></a>
+    </footer>
+    
+    
+    <script src="./script/app.js"></script>
+
+</body>
 </html>
