@@ -197,9 +197,10 @@ h1{
 .work-info-container{
   @include p-top3;
   display: flex;
-  justify-content: space-evenly;
-  > img {
+  justify-content: space-between;
+    > figure {
     width: 15vw;
+    text-align: center;
   }
 }
 

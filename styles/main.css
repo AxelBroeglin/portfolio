@@ -206,13 +206,14 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.work-info-container > img {
+.work-info-container > figure {
   width: 15vw;
+  text-align: center;
 }
 
 /************ END OF SECOND SECTION *************/
