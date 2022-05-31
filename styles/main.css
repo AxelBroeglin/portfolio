@@ -125,7 +125,7 @@ h1 {
   line-height: 1.1;
   padding-top: 8vh;
   height: 100vh;
-  background-color: #12263a;
+  background-color: #1d2c67;
   width: 100%;
 }
 
@@ -391,12 +391,18 @@ nav {
 footer {
   padding-top: 6vh;
   padding-bottom: 6vh;
-  height: 5vh;
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1d2c67;
+  color: white;
+  font-weight: bold;
 }
 
 .button {
