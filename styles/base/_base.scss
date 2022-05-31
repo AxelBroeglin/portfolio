@@ -39,12 +39,9 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-
-
-  min-height: 100vh;
+ min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: 'Rubik', sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -101,16 +98,18 @@ select {
 /***************** GENERAL ******************/
 
 body{
-    padding: 4vh 10vw 0 10vw;
     background-color: $main-background;
     color: $font;
 }
 h1, h2, h3, .link{
-  color:$dark-red;
+  color:$main-green;
 }
 h1{
   text-align: center;
   @include p-top4;
+}
+#main-homepage{
+  padding: 4vh 10vw 0 10vw;
 }
 /**************** END OF GENERAL ************/
 
@@ -125,13 +124,9 @@ h1{
     font-size: 2.2em;
     line-height: 1.1;
     padding-top: 8vh;
-    &--right{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        text-align: right;
-        @include p-top5;
-    }
+    height: 100vh;
+    background-color: $intro-background;
+    width:100%;
 }
 #h1{
     @include p-top5;
@@ -197,10 +192,9 @@ h1{
 .work-info-container{
   @include p-top3;
   display: flex;
-  justify-content: space-between;
-    > figure {
+  justify-content: space-evenly;
+  > img {
     width: 15vw;
-    text-align: center;
   }
 }
 

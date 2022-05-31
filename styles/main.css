@@ -44,7 +44,6 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: 'Rubik', sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
@@ -100,18 +99,21 @@ select {
 /**************** End of Reset ***************/
 /***************** GENERAL ******************/
 body {
-  padding: 4vh 10vw 0 10vw;
-  background-color: #d7cec7;
+  background-color: #f3efeb;
   color: #565656;
 }
 
 h1, h2, h3, .link {
-  color: #76323f;
+  color: #2eb086;
 }
 
 h1 {
   text-align: center;
   padding-top: 4vh;
+}
+
+#main-homepage {
+  padding: 4vh 10vw 0 10vw;
 }
 
 /**************** END OF GENERAL ************/
@@ -122,21 +124,9 @@ h1 {
   font-size: 2.2em;
   line-height: 1.1;
   padding-top: 8vh;
-}
-
-.section-intro--right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  text-align: right;
-  padding-top: 5vh;
+  height: 100vh;
+  background-color: #12263a;
+  width: 100%;
 }
 
 #h1 {
@@ -206,14 +196,13 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.work-info-container > figure {
+.work-info-container > img {
   width: 15vw;
-  text-align: center;
 }
 
 /************ END OF SECOND SECTION *************/
