@@ -1,12 +1,12 @@
-nav{
-    color: $font;
+#navbar{
+    padding: 3vh 10vw 2vh 10vw;
+    background-color: $main-background;
+    z-index: 999;
 }
-
 .header-mobile{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .menu-mobile{
@@ -110,8 +110,11 @@ nav{
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
   .sticky {
     position: fixed;
-    top: 2em;
-    width: 80%;
+    top:0;
+    width: 100vw;
     @include p-top2;
 }
 
+.stick-main{
+    @include p-top7;
+}
