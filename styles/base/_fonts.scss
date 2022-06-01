@@ -6,21 +6,8 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('../fonts/PlayfairDisplay-SemiBold.woff2') format('woff2'),
-        url('../fonts/PlayfairDisplay-SemiBold.woff') format('woff'),
-        url('../fonts/PlayfairDisplay-SemiBold.ttf') format('ttf');
-    font-weight: 600;
-    font-style: normal;
-}
 
-
-ul>li{
-    font-family: 'Playfair Display', serif;
-}
-
-.section-number, p, a, h1, h2, h3, figcaption{
+*{
     font-family: 'Poppins', sans-serif;
 }
 
