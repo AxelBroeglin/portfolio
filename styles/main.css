@@ -128,111 +128,7 @@ h1 {
   width: 100%;
 }
 
-#h1 {
-  padding-top: 5vh;
-}
-
 /************** END OF INTRO ***********/
-/************ FIRST SECTION *************/
-.first-section {
-  margin-top: 5vh;
-}
-
-.first-section__txt {
-  font-size: 1.4em;
-}
-
-.my-picture {
-  display: none;
-  max-width: 40vw;
-}
-
-.tools-title {
-  padding-top: 4vh;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.tools-container {
-  padding-top: 2vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.tools-container > figure {
-  width: 15vh;
-  padding: 1em .7em 1em .7em;
-  display: inline-block;
-}
-
-.tools-container > figure > figcaption {
-  text-align: center;
-  padding-top: 1vh;
-}
-
-/************ END OF FIRST SECTION *************/
-/************ SECOND SECTION *************/
-.second-section {
-  padding-top: 7vh;
-}
-
-.second-section > article {
-  padding-top: 3vh;
-}
-
-.second-section > article > h3 {
-  padding-bottom: 1em;
-}
-
-.work-info-container {
-  padding-top: 3vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.work-info-container > img {
-  width: 15vw;
-}
-
-/************ END OF SECOND SECTION *************/
-/************ THIRD SECTION *************/
-.third-section {
-  padding-top: 7vh;
-}
-
-.third-section__p {
-  padding-top: 4vh;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-.third-section__button-container {
-  padding-top: 3vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.third-section__button {
-  border: none;
-  padding: 1em;
-  color: #565656;
-}
-
-/************ END OF THIRD SECTION *************/
 @font-face {
   font-family: 'poppinsregular';
   src: url("../fonts/poppins-regular-webfont.woff") format("woff"), url("../fonts/poppins-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-regular-webfont.ttf") format("ttf");
@@ -436,6 +332,115 @@ button {
   padding: 4vh 10vw 0 10vw;
 }
 
+/************ INTRO SECTION *************/
+#h1 {
+  text-align: left;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+
+/************ END OF INTRO SECTION *************/
+/************ FIRST SECTION *************/
+.first-section {
+  margin-top: 5vh;
+}
+
+.first-section__txt {
+  font-size: 1.4em;
+}
+
+.my-picture {
+  display: none;
+  max-width: 40vw;
+}
+
+.tools-title {
+  padding-top: 4vh;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.tools-container {
+  padding-top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tools-container > figure {
+  width: 10vh;
+  padding: 1em .7em 1em .7em;
+  display: inline-block;
+}
+
+.tools-container > figure > figcaption {
+  text-align: center;
+  padding-top: 1vh;
+}
+
+/************ END OF FIRST SECTION *************/
+/************ SECOND SECTION *************/
+.second-section {
+  padding-top: 7vh;
+}
+
+.second-section > article {
+  padding-top: 3vh;
+}
+
+.second-section > article > h3 {
+  padding-bottom: 1em;
+}
+
+.work-info-container {
+  padding-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.work-info-container > img {
+  width: 15vw;
+}
+
+/************ END OF SECOND SECTION *************/
+/************ THIRD SECTION *************/
+.third-section {
+  padding-top: 7vh;
+}
+
+.third-section__p {
+  padding-top: 4vh;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.third-section__button-container {
+  padding-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.third-section__button {
+  border: none;
+  padding: 1em;
+  color: #565656;
+}
+
+/************ END OF THIRD SECTION *************/
 #body-ag {
   height: 100vh;
   background-color: #1f2632;
@@ -958,7 +963,7 @@ button {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-      grid-template-areas: "header header" "stack code" "stack link";
+      grid-template-areas: "header header" "stack code" "stack link";
 }
 
 .project__col--header {
