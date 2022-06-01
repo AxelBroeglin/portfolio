@@ -398,6 +398,17 @@ button {
   padding-bottom: 1em;
 }
 
+.projects-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
 .work-info-container {
   padding-top: 3vh;
   display: -webkit-box;
@@ -408,8 +419,8 @@ button {
           justify-content: space-evenly;
 }
 
-.work-info-container > img {
-  width: 15vw;
+.work-info-container > figure {
+  width: 5vw;
 }
 
 /************ END OF SECOND SECTION *************/

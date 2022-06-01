@@ -69,13 +69,19 @@
       }
     }
   }
-  
+  .projects-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
   .work-info-container{
     @include p-top3;
     display: flex;
     justify-content: space-evenly;
-    > img {
-      width: 15vw;
+    > figure {
+      width: 5vw;
     }
   }
   
