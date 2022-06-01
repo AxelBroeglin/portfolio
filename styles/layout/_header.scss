@@ -6,6 +6,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .menu-mobile{
@@ -98,5 +99,19 @@ nav{
 }
 .menu-btn.open .menu-btn__burger::after{
     transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
+/*******************/  
+/**Sticky menu**/
+/*******************/  
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 2em;
+    width: 80%;
+    @include p-top2;
 }
 

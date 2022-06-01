@@ -29,5 +29,21 @@ menuBtn.addEventListener('click', () => {
     }
 });
 
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 //clic sur menu doit changer la couleur de la nav. prendre en compte que nav et body ont 4vh de décalage quand nav va prendre 100vh

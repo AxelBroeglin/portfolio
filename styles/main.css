@@ -99,7 +99,7 @@ select {
 /**************** End of Reset ***************/
 /***************** GENERAL ******************/
 body {
-  background-color: #f3efeb;
+  background-color: #fffbf7;
   color: #565656;
 }
 
@@ -386,6 +386,17 @@ nav {
 .menu-btn.open .menu-btn__burger::after {
   -webkit-transform: rotate(-45deg) translate(35px, 35px);
           transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/*******************/
+/**Sticky menu**/
+/*******************/
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 2em;
+  width: 80%;
+  padding-top: 2vh;
 }
 
 footer {
