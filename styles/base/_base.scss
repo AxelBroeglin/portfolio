@@ -141,7 +141,7 @@ h1{
 /************ FIRST SECTION *************/
 
 .first-section{
-    @include p-top7;
+  margin-top: 5vh;
     &__txt{
         font-size: 1.4em;
     }

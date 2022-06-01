@@ -136,7 +136,7 @@ h1 {
 /************** END OF INTRO ***********/
 /************ FIRST SECTION *************/
 .first-section {
-  padding-top: 7vh;
+  margin-top: 5vh;
 }
 
 .first-section__txt {
@@ -256,8 +256,10 @@ ul > li {
   font-family: 'Poppins', sans-serif;
 }
 
-nav {
-  color: #565656;
+#navbar {
+  padding: 3vh 10vw 2vh 10vw;
+  background-color: #fffbf7;
+  z-index: 999;
 }
 
 .header-mobile {
@@ -394,9 +396,13 @@ nav {
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
-  top: 2em;
-  width: 80%;
+  top: 0;
+  width: 100vw;
   padding-top: 2vh;
+}
+
+.stick-main {
+  padding-top: 7vh;
 }
 
 footer {
