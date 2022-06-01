@@ -101,6 +101,9 @@ body{
     background-color: $main-background;
     color: $font;
 }
+main{
+  padding: 4vh 10vw 0 10vw;
+}
 h1, h2, h3, .link{
   color:$main-green;
 }
@@ -108,9 +111,7 @@ h1{
   text-align: center;
   @include p-top4;
 }
-#main-homepage{
-  padding: 4vh 10vw 0 10vw;
-}
+
 /**************** END OF GENERAL ************/
 
 

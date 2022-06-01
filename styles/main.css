@@ -103,6 +103,10 @@ body {
   color: #565656;
 }
 
+main {
+  padding: 4vh 10vw 0 10vw;
+}
+
 h1, h2, h3, .link {
   color: #2eb086;
 }
@@ -110,10 +114,6 @@ h1, h2, h3, .link {
 h1 {
   text-align: center;
   padding-top: 4vh;
-}
-
-#main-homepage {
-  padding: 4vh 10vw 0 10vw;
 }
 
 /**************** END OF GENERAL ************/
@@ -254,6 +254,10 @@ ul > li {
 
 .section-number, p, a, h1, h2, h3, figcaption {
   font-family: 'Poppins', sans-serif;
+}
+
+header {
+  padding: 3vh 10vw 2vh 10vw;
 }
 
 #navbar {
@@ -462,6 +466,14 @@ footer {
           transform: scaleX(1);
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
+}
+
+#body-homepage {
+  padding: 0;
+}
+
+#main-homepage {
+  padding: 4vh 10vw 0 10vw;
 }
 
 #body-ag {
