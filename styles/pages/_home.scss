@@ -114,3 +114,65 @@
     }
   }
   /************ END OF THIRD SECTION *************/
+
+
+  /***************** CONTACT *********************/
+
+  .contact{
+    @include p-top4;
+    > p{
+        @include p-bottom2;
+    }
+    &__fields{
+        width: 10vw;
+        @include p-bottom1;
+        background: 0 0;
+        border: none;
+        border-bottom: 1px solid $main-green;
+        color: $main-green;
+        padding-left: 1vw;
+    }
+    &__message{
+        border: 0;
+        background: hsla(0,0%,100%,.2);
+        width: 100%;
+        height:15vh;
+        padding-left: 1vw;
+        @include p-top1;
+    }
+    &__button-container{
+        text-align: right;
+        &__button{
+            border: none;
+            padding:1.5vh;
+            background-color: hsla(0,0%,100%,.2);
+            color: $white;
+            font-weight: bold;
+            &:hover{
+                -webkit-box-shadow: 0px 0px 20px 10px rgba(176,176,176,0.3); 
+                box-shadow: 0px 0px 20px 10px rgba(176,176,176,0.3);
+            }
+        }
+    }
+    &__footer{
+        padding-top: 0;
+        width: 80%;
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+input:focus, textarea:focus {
+    outline-width: 0;
+    color: $main-green;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $main-green;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: $main-green;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+color: $main-green;
+}

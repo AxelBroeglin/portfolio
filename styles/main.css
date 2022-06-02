@@ -452,6 +452,101 @@ button {
 }
 
 /************ END OF THIRD SECTION *************/
+/***************** CONTACT *********************/
+.contact {
+  padding-top: 4vh;
+}
+
+.contact > p {
+  padding-bottom: 2vh;
+}
+
+.contact__fields {
+  width: 10vw;
+  padding-bottom: 1vh;
+  background: 0 0;
+  border: none;
+  border-bottom: 1px solid #2eb086;
+  color: #2eb086;
+  padding-left: 1vw;
+}
+
+.contact__message {
+  border: 0;
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 15vh;
+  padding-left: 1vw;
+  padding-top: 1vh;
+}
+
+.contact__button-container {
+  text-align: right;
+}
+
+.contact__button-container__button {
+  border: none;
+  padding: 1.5vh;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-weight: bold;
+}
+
+.contact__button-container__button:hover {
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(176, 176, 176, 0.3);
+  box-shadow: 0px 0px 20px 10px rgba(176, 176, 176, 0.3);
+}
+
+.contact__footer {
+  padding-top: 0;
+  width: 80%;
+  position: fixed;
+  bottom: 0;
+}
+
+input:focus, textarea:focus {
+  outline-width: 0;
+  color: #2eb086;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2eb086;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2eb086;
+  opacity: 1;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2eb086;
+  opacity: 1;
+  /* Firefox */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2eb086;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #2eb086;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #2eb086;
+}
+
 #body-ag {
   height: 100vh;
   background-color: #1f2632;
@@ -1014,100 +1109,6 @@ button {
 
 .project__col > a {
   font-weight: bold;
-}
-
-.contact {
-  padding-top: 4vh;
-}
-
-.contact > p {
-  padding-bottom: 2vh;
-}
-
-.contact__fields {
-  width: 100%;
-  padding-bottom: 1vh;
-  background: 0 0;
-  border: none;
-  border-bottom: 1px solid #fff;
-  color: #fff;
-  padding-left: 1vw;
-}
-
-.contact__message {
-  border: 0;
-  background: rgba(255, 255, 255, 0.2);
-  width: 100%;
-  height: 15vh;
-  padding-left: 1vw;
-  padding-top: 1vh;
-}
-
-.contact__button-container {
-  text-align: right;
-}
-
-.contact__button-container__button {
-  border: none;
-  padding: 1.5vh;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  font-weight: bold;
-}
-
-.contact__button-container__button:hover {
-  -webkit-box-shadow: 0px 0px 20px 10px rgba(176, 176, 176, 0.3);
-  box-shadow: 0px 0px 20px 10px rgba(176, 176, 176, 0.3);
-}
-
-.contact__footer {
-  padding-top: 0;
-  width: 80%;
-  position: fixed;
-  bottom: 0;
-}
-
-input:focus, textarea:focus {
-  outline-width: 0;
-  color: #fff;
-}
-
-::-webkit-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-  opacity: 1;
-  /* Firefox */
-}
-
-:-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-  opacity: 1;
-  /* Firefox */
-}
-
-::-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-  opacity: 1;
-  /* Firefox */
-}
-
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-  opacity: 1;
-  /* Firefox */
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #fff;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #fff;
 }
 
 #projects-container > h1 {

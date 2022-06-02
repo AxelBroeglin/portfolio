@@ -103,12 +103,13 @@
         
             <!-- SECOND PART -->
             <section class="second-section">
-                <h2>RECENT WORKS</h2>
+                <h2>RECENT WORKS // Makes text appear on hover</h2>
                 <!-- FIRST WORK -->
                 <div class="projects-grid">
                     <article>
                         <h3>EHESP Conseil</h3>
-                        <p class="work-desc"></p>  <!-- To be hidden on mobile OR desk, to be decided -->
+                        <p class="work-desc">A website created for an association, using Wordpress and Divi. Custom design.
+                        </p>  <!-- To be hidden on mobile OR desk, to be decided -->
                         <a href="ehesp-consei.fr">  <!--  Hover to be thought, cursor to be changed with "See site" or smth -->
                             <picture>
                                 <source media="(max-width:767px)" srcset="./images/screenshot-ehesp-desk.png">
@@ -138,7 +139,8 @@
                     <!-- SECOND WORK -->
                     <article>
                         <h3>Advice Generator</h3>
-                    <p class="work-desc"></p>  <!-- To be hidden on mobile OR desk, to be decided -->
+                    <p class="work-desc">A project done to practice calling and manipulating an API using Javascript.
+                    </p>  <!-- To be hidden on mobile OR desk, to be decided -->
                     <a href="projects\advice-generator\overview.html">  <!--  Hover to be thought, cursor to be changed with "See site" or smth -->
                             <picture>
                                 <source media="(max-width:767px)" srcset="./images/advice-generator-desk.png">
@@ -178,11 +180,28 @@
             <section class="third-section" id="contact">
                 <h2>CONTACT</h2>
                 <p class="third-section__p">Let's have a chat !</p>
-                <div class="button-container">
-                    <a href="contact.html">
-                        <button>Send me a message</button>
-                    </a>
-                </div>
+
+                <form class="contact" method="post" action="contact-form-process.php">
+            
+                  <p>
+                    <input type="text" id="Name" name="Name" aria-label="Name" value="" class="contact__fields" aria-required="true" aria-invalid="false" placeholder="Your name">
+                  </p>
+            
+                  <p>
+                    <input type="email"  id="Email" name="Email" aria-label="Email Address" value="" class="contact__fields" aria-required="true" aria-invalid="false" placeholder="Your Email Address">
+                  </p>
+            
+                  <p>
+                    <textarea id="Message" class="contact__message" name="Message" aria-label="Message" class=" aria-required="true" aria-invalid="false" placeholder="Your Message" maxlength="3000" required></textarea>
+                  </p>
+            
+            
+                  <div class="button-container">
+                      <button type="submit">Send Message</button>
+                  </div>
+              </form>
+
+
             </section>
         </main>
 
