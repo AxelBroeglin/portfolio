@@ -380,25 +380,17 @@ button {
 /************ END OF INTRO SECTION *************/
 /************ FIRST SECTION *************/
 .first-section__grid {
+  padding-top: 2vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}
-
-.first-section__grid__p {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 1 / 2 / 2;
 }
 
 .first-section__grid__tools__title {
+  padding-top: 4vh;
   text-align: center;
   font-size: 1.5em;
 }
@@ -409,9 +401,6 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .first-section__grid__tools__container > figure {
@@ -423,14 +412,6 @@ button {
 .first-section__grid__tools__container > figure > figcaption {
   text-align: center;
   padding-top: 1vh;
-}
-
-.first-section__grid__image {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-area: 1 / 2 / 2 / 3;
 }
 
 .first-section__txt {

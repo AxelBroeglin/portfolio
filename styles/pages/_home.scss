@@ -65,40 +65,33 @@
 /************ FIRST SECTION *************/
 
 .first-section{
-  &__grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    &__p{
-      grid-area: 1 / 1 / 2 / 2;
-    }
-    &__tools{
-      &__title{
-        text-align: center;
-        font-size: 1.5em;
-      }
-      &__container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-        >figure{
-          width: 10vh;
-          padding: 1em .7em 1em .7em;
-          display: inline-block;
+    &__grid{
+      @include p-top2;
+      display: grid; 
+      grid-template-columns: 1fr 1fr; 
+      grid-template-rows: 1fr; 
+      &__tools{
+        &__title{
+          @include p-top4;
+          text-align: center;
+          font-size: 1.5em;
+        }
+        &__container{
+          display: flex;
+          flex-wrap: wrap;
+          >figure{
+            width: 10vh;
+            padding: 1em .7em 1em .7em;
+            display: inline-block;
             >figcaption{
               text-align: center;
               @include p-top1;
             }
+          }
         }
       }
+
     }
-    &__image{
-      grid-area: 1 / 2 / 2 / 3;
-    }
-  }
   &__txt{
       font-size: 1.4em;
   }
