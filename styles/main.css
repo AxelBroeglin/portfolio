@@ -1069,7 +1069,7 @@ input:focus, textarea:focus {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-      grid-template-areas: "header header" "stack code" "stack link";
+      grid-template-areas: "header header" "stack code" "stack link";
 }
 
 .project__col--header {
