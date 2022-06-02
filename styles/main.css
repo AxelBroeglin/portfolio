@@ -116,19 +116,6 @@ h1 {
 }
 
 /**************** END OF GENERAL ************/
-/**************** INTRO ***************/
-.section-intro {
-  font-family: 'Playfair Display', serif;
-  font-weight: 500;
-  font-size: 2.2em;
-  line-height: 1.1;
-  padding-top: 8vh;
-  height: 100vh;
-  background-color: #1d2c67;
-  width: 100%;
-}
-
-/************** END OF INTRO ***********/
 @font-face {
   font-family: 'poppinsregular';
   src: url("../fonts/poppins-regular-webfont.woff") format("woff"), url("../fonts/poppins-regular-webfont.woff2") format("woff2"), url("../fonts/poppins-regular-webfont.ttf") format("ttf");
@@ -333,11 +320,24 @@ button {
 }
 
 /************ INTRO SECTION *************/
+.section-intro {
+  position: relative;
+  height: 100vh;
+  background-color: #1d2c67;
+  width: 100%;
+}
+
+.section-intro__container {
+  position: absolute;
+  font-size: 1.2em;
+  line-height: 1.2;
+  bottom: 30vh;
+  left: 5vw;
+}
+
 #h1 {
   text-align: left;
   color: #fff;
-  font-size: 1.2em;
-  line-height: 1.2;
 }
 
 /************ END OF INTRO SECTION *************/
