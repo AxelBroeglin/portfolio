@@ -379,27 +379,31 @@ button {
 
 /************ END OF INTRO SECTION *************/
 /************ FIRST SECTION *************/
-.first-section__txt {
-  font-size: 1.4em;
+.first-section__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
-.first-section > h2 {
-  margin-top: 5vh;
+.first-section__grid__p {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
-.my-picture {
-  display: none;
-  max-width: 40vw;
-}
-
-.tools-title {
-  padding-top: 4vh;
+.first-section__grid__tools__title {
   text-align: center;
   font-size: 1.5em;
 }
 
-.tools-container {
-  padding-top: 2vh;
+.first-section__grid__tools__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,15 +414,31 @@ button {
           justify-content: center;
 }
 
-.tools-container > figure {
+.first-section__grid__tools__container > figure {
   width: 10vh;
   padding: 1em .7em 1em .7em;
   display: inline-block;
 }
 
-.tools-container > figure > figcaption {
+.first-section__grid__tools__container > figure > figcaption {
   text-align: center;
   padding-top: 1vh;
+}
+
+.first-section__grid__image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.first-section__txt {
+  font-size: 1.4em;
+}
+
+.first-section > h2 {
+  margin-top: 5vh;
 }
 
 /************ END OF FIRST SECTION *************/
