@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+/* Smooth scrolling*/
+html {
+  scroll-behavior: smooth;
+}
+
 /* Remove default margin */
 body,
 h1,
@@ -128,12 +133,12 @@ h1 {
 }
 
 header {
-  padding: 3vh 10vw 2vh 10vw;
+  padding-top: 2vh;
 }
 
 #navbar {
-  padding: 3vh 10vw 2vh 10vw;
-  background-color: #fffbf7;
+  padding: 3vh 5vw 2vh 5vw;
+  background-color: #1d2c67;
   z-index: 999;
 }
 
@@ -220,7 +225,7 @@ header {
 .menu-btn__burger {
   width: 50px;
   height: 6px;
-  background-color: #565656;
+  background-color: #2eb086;
   border-radius: 5px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -232,7 +237,7 @@ header {
   position: absolute;
   width: 50px;
   height: 6px;
-  background-color: #565656;
+  background-color: #2eb086;
   border-radius: 5px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -263,21 +268,6 @@ header {
 .menu-btn.open .menu-btn__burger::after {
   -webkit-transform: rotate(-45deg) translate(35px, 35px);
           transform: rotate(-45deg) translate(35px, 35px);
-}
-
-/*******************/
-/**Sticky menu**/
-/*******************/
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  padding-top: 2vh;
-}
-
-.stick-main {
-  padding-top: 7vh;
 }
 
 footer {
@@ -315,7 +305,7 @@ button {
   padding: 0;
 }
 
-#main-homepage {
+.main-homepage {
   padding: 4vh 10vw 0 10vw;
 }
 
@@ -329,25 +319,72 @@ button {
 
 .section-intro__container {
   position: absolute;
-  font-size: 1.2em;
   line-height: 1.2;
   bottom: 30vh;
   left: 5vw;
+  max-width: 80vw;
+}
+
+@media only screen and (min-width: 900px) {
+  .section-intro__container {
+    max-width: 40vw;
+  }
+}
+
+.section-intro__container__p {
+  color: #fff;
+  font-size: 1.2em;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
+}
+
+.section-intro__container__p > span {
+  color: #2eb086;
+  font-weight: bold;
+}
+
+.section-intro__links-container {
+  width: 100%;
+  padding-top: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-intro__links-container__button-container {
+  margin-left: auto;
+}
+
+.section-intro__links-container__button-container__button:hover {
+  cursor: pointer;
+}
+
+.section-intro__img {
+  padding-right: 1rem;
+  width: 4.125rem;
+  display: inline;
 }
 
 #h1 {
   text-align: left;
   color: #fff;
+  font-size: 2.5em;
+}
+
+@media only screen and (min-width: 900px) {
+  #h1 {
+    font-size: 3.1em;
+  }
 }
 
 /************ END OF INTRO SECTION *************/
 /************ FIRST SECTION *************/
-.first-section {
-  margin-top: 5vh;
-}
-
 .first-section__txt {
   font-size: 1.4em;
+}
+
+.first-section > h2 {
+  margin-top: 5vh;
 }
 
 .my-picture {
