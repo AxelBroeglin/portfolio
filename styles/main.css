@@ -120,6 +120,10 @@ h1 {
   padding-top: 4vh;
 }
 
+p {
+  font-size: 1.5em;
+}
+
 /**************** END OF GENERAL ************/
 @font-face {
   font-family: 'poppinsregular';
@@ -309,6 +313,11 @@ button {
   padding: 4vh 10vw 0 10vw;
 }
 
+.homepage__h2 {
+  font-size: 3em;
+  padding-bottom: 4vh;
+}
+
 /************ INTRO SECTION *************/
 .section-intro {
   position: relative;
@@ -391,25 +400,16 @@ button {
 
 .first-section__grid__tools__title {
   padding-top: 4vh;
-  text-align: center;
   font-size: 1.5em;
 }
 
-.first-section__grid__tools__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.first-section__grid__tools__container > figure {
+.first-section__grid__tools__container > div > figure {
   width: 10vh;
   padding: 1em .7em 1em .7em;
   display: inline-block;
 }
 
-.first-section__grid__tools__container > figure > figcaption {
+.first-section__grid__tools__container > div > figure > figcaption {
   text-align: center;
   padding-top: 1vh;
 }
@@ -491,10 +491,6 @@ button {
 
 /************ END OF THIRD SECTION *************/
 /***************** CONTACT *********************/
-.contact {
-  padding-top: 4vh;
-}
-
 .contact > * {
   padding-top: 2vh;
 }

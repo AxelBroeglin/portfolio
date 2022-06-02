@@ -5,6 +5,13 @@
     padding: 4vh 10vw 0 10vw;
 }
 
+.homepage{
+  &__h2{
+    font-size: 3em;
+    @include p-bottom4;
+  }
+}
+
 /************ INTRO SECTION *************/
 .section-intro{
   position: relative;
@@ -73,13 +80,10 @@
       &__tools{
         &__title{
           @include p-top4;
-          text-align: center;
           font-size: 1.5em;
         }
         &__container{
-          display: flex;
-          flex-wrap: wrap;
-          >figure{
+          >div>figure{
             width: 10vh;
             padding: 1em .7em 1em .7em;
             display: inline-block;
@@ -168,7 +172,6 @@
   /***************** CONTACT *********************/
 
   .contact{
-    @include p-top4;
     >*{
       @include p-top2;
     }
