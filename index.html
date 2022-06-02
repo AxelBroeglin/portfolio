@@ -182,26 +182,23 @@
                 <p class="third-section__p">Let's have a chat !</p>
 
                 <form class="contact" method="post" action="contact-form-process.php">
-            
-                  <p>
+                <div class="contact__container-names">
+                    <div class="contact__containers">
                     <input type="text" id="Firstname" name="Firstname" aria-label="Firstname" value="" class="contact__fields" aria-required="true" aria-invalid="false" placeholder="Your first name">
-                  </p>
-                  <p>
+                    </div>
+                    <div class="contact__containers">
                     <input type="text" id="Lastname" name="Lastname" aria-label="Lastname" value="" class="contact__fields" aria-required="true" aria-invalid="false" placeholder="Your last name">
-                  </p>
-            
-                  <p>
-                    <input type="email"  id="Email" name="Email" aria-label="Email Address" value="" class="contact__fields" aria-required="true" aria-invalid="false" placeholder="Your Email Address">
-                  </p>
-            
-                  <p>
-                    <textarea id="Message" class="contact__message" name="Message" aria-label="Message" class=" aria-required="true" aria-invalid="false" placeholder="Your Message" maxlength="3000" required></textarea>
-                  </p>
-            
-            
-                  <div class="button-container">
-                      <button type="submit">Send Message</button>
-                  </div>
+                    </div>
+                </div>
+                <div>
+                <input type="email"  id="Email" name="Email" aria-label="Email Address" value="" class="contact__fields contact__email" aria-required="true" aria-invalid="false" placeholder="Your Email Address">
+                </div>
+                <div>
+                <textarea id="Message" class="contact__message" name="Message" aria-label="Message" class=" aria-required="true" aria-invalid="false" placeholder="Your Message" maxlength="3000" required></textarea>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Send Message</button>
+                </div>
               </form>
 
 
