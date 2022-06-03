@@ -128,19 +128,15 @@
   }
   .projects-grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    @media only screen and (min-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
-  .work-info-container{
-    @include p-top3;
-    display: flex;
-    justify-content: space-evenly;
-    > figure {
-      width: 5vw;
-    }
-  }
+
 
   .container-hover{
     position: relative;
@@ -148,6 +144,8 @@
       display: block;
       width: 100%;
       height: auto;
+      @include p-bottom2;
+      @include p-top1;
     }
   }
   .overlay{
@@ -159,8 +157,8 @@
     height: 100%;
     width: 100%;
     opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
+    transition: .2s ease;
+    background-color: rgba(0, 0, 0, 0.8);
   }
   .container-hover:hover .overlay {
     opacity: 1;
@@ -169,12 +167,11 @@
     color: white;
     font-size: 20px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+    top: 30%;
+    left: 30%;
+    -webkit-transform: translate(-30%, -30%);
+    -ms-transform: translate(-30%, -30%);
+    transform: translate(-30%, -30%);
   }
   
   
