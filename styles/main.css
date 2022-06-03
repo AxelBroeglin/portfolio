@@ -414,6 +414,19 @@ button {
   padding-top: 1vh;
 }
 
+.first-section__grid__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 .first-section__txt {
   font-size: 1.4em;
 }
@@ -459,6 +472,45 @@ button {
 
 .work-info-container > figure {
   width: 5vw;
+}
+
+.container-hover {
+  position: relative;
+}
+
+.container-hover > source, .container-hover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container-hover:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /************ END OF SECOND SECTION *************/

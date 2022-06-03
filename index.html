@@ -109,17 +109,19 @@
                         </div>
                     </div>
 
-                    <picture class="first-section__grid__image large-screens-only">
-                        <source media="(max-width:767px)" srcset="./images/temp-photo.jpg">
-                        <img src="./images/temp-photo.jpg" alt="" >
-                    </picture>
+                    <div class="first-section__grid__image large-screens-only">
+                        <picture class="">
+                            <source media="(max-width:767px)" srcset="./images/temp-photo.jpg">
+                            <img src="./images/temp-photo.jpg" alt="" >
+                        </picture>
+                        <div class="button-container">
+                        <a href="about.html">
+                            <button>More about me</button>
+                        </a>
+                    </div>
+                    </div>
+                </div>
 
-                </div>
-                <div class="button-container">
-                    <a href="about.html">
-                        <button>More about me</button>
-                    </a>
-                </div>
 
 
             </section>
@@ -129,7 +131,7 @@
                 <h2 class="homepage__h2">Recent works // Makes text appear on hover</h2>
                 <!-- FIRST WORK -->
                 <div class="projects-grid">
-                    <article>
+                    <article class="container-hover">
                         <h3>EHESP Conseil</h3>
                         <p class="work-desc">A website created for an association, using Wordpress and Divi. Custom design.
                         </p>  <!-- To be hidden on mobile OR desk, to be decided -->
@@ -139,7 +141,10 @@
                                 <img src="./images/screenshot-ehesp-desk.png" alt="" >
                             </picture>
                         </a>
-                        <div class="work-info-container">
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                          </div>
+                        <!-- <div class="work-info-container">
                             <figure>
                                 <img src="./images/html.png" alt="">
                                 <figcaption>HTML</figcaption>
@@ -156,7 +161,7 @@
                                 <img src="./images/wordpress.png" alt="">
                                 <figcaption>Wordpress</figcaption>
                                 </figure>
-                        </div>
+                        </div> -->
                     </article>
 
                     <!-- SECOND WORK -->
