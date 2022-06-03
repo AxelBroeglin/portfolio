@@ -329,6 +329,13 @@ button {
   padding-bottom: 4vh;
 }
 
+@media only screen and (max-width: 900px) {
+  .homepage__h2 {
+    font-size: 2em;
+    padding-bottom: 2vh;
+  }
+}
+
 /************ INTRO SECTION *************/
 .section-intro {
   position: relative;
@@ -465,16 +472,25 @@ button {
   display: grid;
   -ms-grid-columns: (1fr)[1];
       grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 2em;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
 }
 
 @media only screen and (min-width: 900px) {
   .projects-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.projects-grid__projects > h3 {
+  padding-bottom: 2vh;
+}
+
+@media only screen and (max-width: 900px) {
+  .projects-grid__projects > h3 {
+    padding-bottom: 1vh;
   }
 }
 
@@ -486,8 +502,6 @@ button {
   display: block;
   width: 100%;
   height: auto;
-  padding-bottom: 2vh;
-  padding-top: 1vh;
 }
 
 .overlay {

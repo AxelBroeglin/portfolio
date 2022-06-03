@@ -9,6 +9,10 @@
   &__h2{
     font-size: 3em;
     @include p-bottom4;
+    @media only screen and (max-width: 900px) {
+    font-size: 2em;
+    @include p-bottom2;
+    }
   }
 }
 
@@ -129,12 +133,17 @@
   .projects-grid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 2em;
     @media only screen and (min-width: 900px) {
       grid-template-columns: repeat(2, 1fr);
     }
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    &__projects>h3{
+      @include p-bottom2;
+      @media only screen and (max-width: 900px) {
+        @include p-bottom1;
+      }
+    }
 
     }
 
@@ -145,8 +154,6 @@
       display: block;
       width: 100%;
       height: auto;
-      @include p-bottom2;
-      @include p-top1;
     }
   }
   .overlay{
