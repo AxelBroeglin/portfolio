@@ -124,6 +124,17 @@ p {
   font-size: 1.5em;
 }
 
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #2eb086;
+  font-weight: bold;
+}
+
+.span-bold {
+  font-weight: bold;
+  color: #2eb086;
+}
+
 /**************** END OF GENERAL ************/
 @font-face {
   font-family: 'poppinsregular';
