@@ -1,10 +1,13 @@
 header{
     @include p-top2;
 }
-#navbar{
+#navbar-homepage{
     padding: 3vh 5vw 2vh 5vw;
     background-color: $dark-blue;
     z-index: 999;
+}
+.navbar-base{
+    padding: 3vh 5vw 2vh 5vw;
 }
 .header-mobile{
     display: flex;

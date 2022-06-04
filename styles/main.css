@@ -154,10 +154,14 @@ header {
   padding-top: 2vh;
 }
 
-#navbar {
+#navbar-homepage {
   padding: 3vh 5vw 2vh 5vw;
   background-color: #1d2c67;
   z-index: 999;
+}
+
+.navbar-base {
+  padding: 3vh 5vw 2vh 5vw;
 }
 
 .header-mobile {
