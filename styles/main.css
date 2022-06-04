@@ -176,11 +176,28 @@ header {
           align-items: center;
 }
 
+.header-mobile .menu-btn {
+  /*HEREHERE*/
+}
+
+@media only screen and (min-width: 900px) {
+  .header-mobile .menu-btn {
+    display: none;
+  }
+}
+
 .menu-mobile {
   display: none;
   text-align: end;
   position: relative;
   top: 25vh;
+}
+
+@media only screen and (min-width: 900px) {
+  .menu-mobile {
+    display: inline-block;
+    top: 0;
+  }
 }
 
 .menu-mobile__ul {

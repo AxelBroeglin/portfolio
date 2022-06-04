@@ -14,9 +14,19 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.header-mobile .menu-btn{
+    @media only screen and (min-width: 900px) {
+    display: none;      
+    }
+    /*HEREHERE*/
+}
 
 .menu-mobile{
     display: none;
+    @media only screen and (min-width: 900px) {
+        display: inline-block;   
+        top:0;
+        }
     text-align: end;
     position: relative;
     top:25vh;
