@@ -1,13 +1,35 @@
 footer{
     @include p-top6;
     @include p-bottom6;
-    height: 15vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    height: auto;
     background-color:$dark-blue;
     color:white;
     font-weight: bold;
 }
+aside{
+    width: 80%;
+    display:flex;
+    justify-content: space-around;
+}
 
-// Does not work on homepage
+.footer{
+    posr
+    &__menu{
+        display: flex;
+        gap: 0.9em;
+        font-size: 1.3em;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__legal-info{
+        @include p-top3;
+        text-align: center;
+        >p{
+            font-size: 0.9em;
+        }
+    }
+}
