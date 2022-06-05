@@ -210,6 +210,7 @@ header {
 
 .menu-mobile__ul {
   font-size: 3em;
+  margin: 0;
 }
 
 .menu-mobile__info {
@@ -238,6 +239,8 @@ header {
 /*********************/
 .shown {
   display: block;
+  z-index: 999;
+  background-color: #1d2c67;
   -webkit-animation: fade-in 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
@@ -334,6 +337,10 @@ header {
           transform: rotate(-45deg) translate(35px, 35px);
 }
 
+.hidden-title {
+  display: none;
+}
+
 footer {
   padding-top: 6vh;
   padding-bottom: 6vh;
@@ -396,7 +403,7 @@ button {
 .section-intro__container {
   position: absolute;
   line-height: 1.2;
-  bottom: 30vh;
+  bottom: 28vh;
   left: 5vw;
   max-width: 80vw;
 }

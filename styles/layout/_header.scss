@@ -37,6 +37,7 @@ header{
     top:25vh;
     &__ul{
         font-size: 3em;
+        margin:0;
     }
     &__info{
         font-size: 1.8em;
@@ -62,6 +63,8 @@ header{
 /*********************/
 .shown{
     display:block;
+    z-index: 999;
+    background-color: $dark-blue;
     -webkit-animation: fade-in .3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: fade-in .3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
@@ -134,4 +137,8 @@ header{
 }
 .menu-btn.open .menu-btn__burger::after{
     transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.hidden-title{
+    display: none;
 }

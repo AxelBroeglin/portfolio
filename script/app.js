@@ -1,10 +1,12 @@
 const menuBtn = document.querySelector('.menu-btn');
 const menuMbl = document.querySelector('.menu-mobile');
 const nav = document.querySelector('.nav-mobile');
+const hiddenTitle = document.getElementById('h1');
 
 let menuOpen = false;
 let menuShown = false;
 let navOpen = false;
+
 menuBtn.addEventListener('click', () => {
     if(!menuOpen) {
         menuBtn.classList.add('open');
@@ -26,5 +28,10 @@ menuBtn.addEventListener('click', () => {
     } else {
         nav.classList.remove('nav-open');
         navOpen = false;
+    }
+    if(menuShown) {
+        hiddenTitle.classList.add('hidden-title');
+    } else {
+        hiddenTitle.classList.remove('hidden-title');
     }
 });
