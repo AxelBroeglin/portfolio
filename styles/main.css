@@ -187,6 +187,10 @@ header {
           align-items: center;
 }
 
+.header-mobile > h2 {
+  font-size: 1.8em;
+}
+
 .header-mobile .menu-btn {
   /*HEREHERE*/
 }
@@ -226,7 +230,7 @@ header {
 
 .nav-mobile .menu-desk__ul > li {
   padding-left: 1em;
-  font-size: 1.4em;
+  font-size: 1.7em;
 }
 
 /*********************/
