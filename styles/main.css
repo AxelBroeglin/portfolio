@@ -164,6 +164,17 @@ header {
   padding: 3vh 5vw 2vh 5vw;
 }
 
+@media only screen and (min-width: 900px) {
+  .nav-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .header-mobile {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,19 +204,29 @@ header {
   top: 25vh;
 }
 
-@media only screen and (min-width: 900px) {
-  .menu-mobile {
-    display: inline-block;
-    top: 0;
-  }
-}
-
 .menu-mobile__ul {
   font-size: 3em;
 }
 
 .menu-mobile__info {
   font-size: 1.8em;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-mobile .menu-desk {
+    display: none;
+  }
+}
+
+.nav-mobile .menu-desk__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-mobile .menu-desk__ul > li {
+  padding-left: 1em;
+  font-size: 1.4em;
 }
 
 /*********************/

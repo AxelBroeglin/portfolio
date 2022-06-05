@@ -9,6 +9,12 @@ header{
 .navbar-base{
     padding: 3vh 5vw 2vh 5vw;
 }
+.nav-mobile{
+    @media only screen and (min-width: 900px) {
+        display: flex;
+        justify-content:space-between;
+      }
+}
 .header-mobile{
     display: flex;
     justify-content: space-between;
@@ -16,17 +22,13 @@ header{
 }
 .header-mobile .menu-btn{
     @media only screen and (min-width: 900px) {
-    display: none;      
-    }
+        display: none;
+      }
     /*HEREHERE*/
 }
 
 .menu-mobile{
     display: none;
-    @media only screen and (min-width: 900px) {
-        display: inline-block;   
-        top:0;
-        }
     text-align: end;
     position: relative;
     top:25vh;
@@ -36,6 +38,20 @@ header{
     &__info{
         font-size: 1.8em;
     }
+}
+
+.nav-mobile .menu-desk{
+    @media only screen and (max-width: 900px) {
+        display: none;
+      }
+    &__ul{
+        display: flex;
+        >li{
+            padding-left: 1em;
+            font-size: 1.4em;
+        }
+    }
+
 }
 
 /*********************/
