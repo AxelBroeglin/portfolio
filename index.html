@@ -56,8 +56,8 @@
                     <h1 id="h1">Hi, my name is Axel Broeglin</h1>
                     <p class="section-intro__container__p">I am a <span>Front-end developer</span> who loves building dynamic and pixel perfect projects.</p>
                     <div class="section-intro__links-container">
-                        <a href="https://github.com/AxelBroeglin"><img class="section-intro__img" src="./images/git.png" alt=""></a>
-                        <a href="https://pt.linkedin.com/in/axel-broeglin-b38810b2"><img class="section-intro__img" src="./images/link.png" alt=""></a>
+                        <a href="https://github.com/AxelBroeglin"><img class="section-intro__img" src="./images/github-green.png" alt=""></a>
+                        <a href="https://pt.linkedin.com/in/axel-broeglin-b38810b2"><img class="section-intro__img" src="./images/linkedin.png" alt=""></a>
                         <div class="section-intro__links-container__button-container">
                             <a href="#about"><button class="section-intro__links-container__button-container__button">More about me</button></a>
                         </div>  
@@ -99,11 +99,11 @@
                             <p class="first-section__grid__tools__title">Tools</p>
                             <div>
                                 <figure>
-                                    <img src="./images/illustrator.png" alt="">
+                                    <img src="./images/github.png" alt="">
                                     <figcaption>GitHub</figcaption>
                                 </figure>
                                 <figure>
-                                    <img src="./images/illustrator.png" alt="">
+                                    <img src="./images/git.png" alt="">
                                     <figcaption>Git</figcaption>
                                 </figure>
                                 <figure>
@@ -152,7 +152,23 @@
                                 </picture>
                             </a>
                             <div class="overlay">
-                                <div class="text">A website created for an association, using Wordpress and Divi. Custom design.</div>
+                                <div class="text">
+                                    <p> An order made for an audit firm, using Wordpress and Divi. Custom design.</p>
+                                    <div class="overlay__img-container">
+                                        <figure>
+                                            <img src="./images/html-green.png" alt="">
+                                            <figcaption>HTML</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="./images/css-green.png" alt="">
+                                            <figcaption>CSS</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="./images/javascript-green.png" alt="">
+                                            <figcaption>Javascript</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
                             </div>
                         </article>
                     </div>
@@ -168,8 +184,29 @@
                                 </picture>
                             </a>
                             <div class="overlay">
-                                <div class="text">A project done to practice calling and manipulating an API using Javascript.</div>
+                                <div class="text">
+                                    <p>A project done to practice calling and manipulating an API using Javascript.</p>
+                                    <div class="overlay__img-container">
+                                        <figure>
+                                            <img src="./images/html-green.png" alt="">
+                                            <figcaption>HTML</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="./images/css-green.png" alt="">
+                                            <figcaption>CSS</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="./images/sass-green.png" alt="">
+                                            <figcaption>Sass</figcaption>
+                                        </figure>
+                                        <figure>
+                                            <img src="./images/javascript-green.png" alt="">
+                                            <figcaption>Javascript</figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
                             </div>
+                            
                         </article>
                     </div>
                 </div>
@@ -187,26 +224,32 @@
             <section class="third-section" id="contact">
                 <h2 class="homepage__h2">Contact</h2>
 
-                <form class="contact" method="post" action="contact-form-process.php">
-                <div class="contact__container-names">
-                    <div class="contact__containers">
-                    <input type="text" id="Firstname" name="Firstname" aria-label="Firstname" value="" class="contact__fields" aria-required="true" aria-invalid="false" placeholder="Your first name">
+                <div class="contact__container">
+                    <form class="contact" method="post" action="contact-form-process.php">
+                        <div class="contact__container__names">
+                            <div class="contact__containers">
+                                <input type="text" id="Firstname" name="Firstname" aria-label="Firstname" value="" class="contact__fields" aria-required="true" aria-invalid="false" placeholder="Your first name">
+                            </div>
+                            <div class="contact__containers">
+                                <input type="text" id="Lastname" name="Lastname" aria-label="Lastname" value="" class="contact__fields" aria-required="true" aria-invalid="false" placeholder="Your last name">
+                            </div>
+                        </div>
+                        <div>
+                            <input type="email"  id="Email" name="Email" aria-label="Email Address" value="" class="contact__fields contact__email" aria-required="true" aria-invalid="false" placeholder="Your Email Address">
+                        </div>
+                        <div>
+                            <textarea id="Message" class="contact__message" name="Message" aria-label="Message" class=" aria-required="true" aria-invalid="false" placeholder="Your Message" maxlength="3000" required></textarea>
+                        </div>
+                        <div class="button-container">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                    <div class="contact__container__contact-info">
+                        <h3>Let's chat !</h3>
+                        <p class="">+351 962450738 <br>
+                        hello@axelbroeglin.dev</p>
                     </div>
-                    <div class="contact__containers">
-                    <input type="text" id="Lastname" name="Lastname" aria-label="Lastname" value="" class="contact__fields" aria-required="true" aria-invalid="false" placeholder="Your last name">
-                    </div>
                 </div>
-                <div>
-                <input type="email"  id="Email" name="Email" aria-label="Email Address" value="" class="contact__fields contact__email" aria-required="true" aria-invalid="false" placeholder="Your Email Address">
-                </div>
-                <div>
-                <textarea id="Message" class="contact__message" name="Message" aria-label="Message" class=" aria-required="true" aria-invalid="false" placeholder="Your Message" maxlength="3000" required></textarea>
-                </div>
-                <div class="button-container">
-                    <button type="submit">Send Message</button>
-                </div>
-              </form>
-
 
             </section>
         </main>

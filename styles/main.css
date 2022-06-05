@@ -605,18 +605,43 @@ button {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+.overlay__img-container {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+
+.overlay__img-container > figure {
+  max-width: 3em;
+  text-align: center;
+  color: white;
+  display: block;
+}
+
+.overlay__img-container > figure > figcaption {
+  font-size: 0.7em;
+  text-align: center;
+}
+
 .container-hover:hover .overlay {
   opacity: 1;
 }
 
 .text {
-  color: white;
   font-size: 20px;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 30%;
-  -webkit-transform: translate(-30%, -30%);
-  transform: translate(-30%, -30%);
+  -webkit-transform: translate(-30%, -50%);
+  transform: translate(-30%, -50%);
+}
+
+.text > p {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 2vh;
 }
 
 /************ END OF SECOND SECTION *************/
@@ -649,6 +674,16 @@ button {
 
 /************ END OF THIRD SECTION *************/
 /***************** CONTACT *********************/
+.contact {
+  width: 66%;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact {
+    width: 100%;
+  }
+}
+
 .contact > * {
   padding-top: 2vh;
 }
@@ -657,7 +692,13 @@ button {
   color: #565656;
 }
 
-.contact__container-names {
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__container__names {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -674,7 +715,7 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 38vw;
+  width: 48%;
 }
 
 .contact__fields {
