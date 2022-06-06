@@ -1,29 +1,37 @@
-aside{
-    width: 100%;
-    display:flex;
-    justify-content: space-around;
-}
-
 .footer{
-    @include p-top6;
-    @include p-bottom6;
-    height: auto;
     background-color:$dark-blue;
     color:white;
     font-weight: bold;
-    
-    &__menu{
+    display: flex;
+    justify-content: center;
+    &__aside{
         display: flex;
-        gap: 0.9em;
-        font-size: 1.5em;
-        padding: 0;
-        margin: 0;
-    }
-    &__legal-info{
-        font-size: 0.9em;
-        @include p-top1;
-    }
-    &__contact-info{
-        color: $main-green;
+        justify-content: space-between;
+        width: 85%;
+        @include p-bottom4;
+        @include p-top4;
+        &__blocs{
+            color: white;
+        }
+        &__menu{
+            display: flex;
+            gap: 0.9em;
+            font-size: 1.5em;
+            padding: 0;
+            margin: 0;
+        }
+        &__img{
+            padding-right: 1rem;
+            width: 3.5rem;
+            display: inline;
+            @include p-top1;
+        }
+        &__legal-info{
+            font-size: 0.9em;
+            @include p-top1;
+        }
+        &__contact-info{
+            color: $main-green;
+        }
     }
 }
