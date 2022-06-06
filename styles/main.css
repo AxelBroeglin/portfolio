@@ -762,6 +762,28 @@ button {
   display: flex;
 }
 
+@media only screen and (max-width: 900px) {
+  .contact__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+
+.contact__container__contact-info {
+  width: 33%;
+  padding-left: 10vw;
+}
+
+@media only screen and (max-width: 900px) {
+  .contact__container__contact-info {
+    width: 100%;
+    padding-bottom: 2vh;
+  }
+}
+
 .contact__container__names {
   display: -webkit-box;
   display: -ms-flexbox;
