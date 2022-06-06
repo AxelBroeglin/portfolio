@@ -12,6 +12,7 @@
         }
         &__button-container{
             gap: 1vw;
+            @include p-bottom6;
         }
         &__img{
             width: 60%;

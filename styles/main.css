@@ -1546,6 +1546,7 @@ textarea:-moz-placeholder {
 
 .about__scan-eat__button-container {
   gap: 1vw;
+  padding-bottom: 6vh;
 }
 
 .about__scan-eat__img {
