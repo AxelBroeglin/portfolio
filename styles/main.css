@@ -342,7 +342,16 @@ header {
   display: none;
 }
 
-footer {
+aside {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer {
   padding-top: 6vh;
   padding-bottom: 6vh;
   height: auto;
@@ -351,38 +360,23 @@ footer {
   font-weight: bold;
 }
 
-aside {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-posr
 .footer__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 0.9em;
-  font-size: 1.3em;
+  font-size: 1.5em;
   padding: 0;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .footer__legal-info {
-  padding-top: 3vh;
-  text-align: center;
+  font-size: 0.9em;
+  padding-top: 1vh;
 }
 
-.footer__legal-info > p {
-  font-size: 0.9em;
+.footer__contact-info {
+  color: #2eb086;
 }
 
 .button-container {
