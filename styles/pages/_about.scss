@@ -1,0 +1,33 @@
+.about{
+    >*{
+        @include p-bottom2;
+    }
+    &__h1{
+        @include p-bottom6;
+    }
+    &__scan-eat{
+        display: flex;
+        @media only screen and (max-width: 900px) {
+            flex-direction: column;
+        }
+        &__button-container{
+            gap: 1vw;
+        }
+        &__img{
+            width: 60%;
+            @media only screen and (max-width: 900px) {
+                width: 100%;            }
+        }
+        &__first-button{
+            color: $main-green;
+            background-color: white;
+            border: 1px solid $main-green;
+            @media only screen and (max-width: 900px) {
+                margin-bottom: 1vh;;
+            }
+        }
+        &__last-button{
+            margin-left: 2vw;
+        }
+    }
+}
