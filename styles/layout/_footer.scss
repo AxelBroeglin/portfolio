@@ -7,11 +7,19 @@
     &__aside{
         display: flex;
         justify-content: space-between;
+        @media only screen and (max-width: 900px) {
+            width: 100%;
+            padding: 4vh;
+            flex-direction: column;
+          }
         width: 85%;
         @include p-bottom4;
         @include p-top4;
         &__blocs{
             color: white;
+            @media only screen and (max-width: 900px) {
+            @include p-top2;
+            }
         }
         &__menu{
             display: flex;
@@ -19,6 +27,9 @@
             font-size: 1.5em;
             padding: 0;
             margin: 0;
+            @media only screen and (max-width: 1200px) {
+            display: none;            
+            }
         }
         &__img{
             padding-right: 1rem;

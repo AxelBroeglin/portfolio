@@ -366,8 +366,25 @@ header {
   padding-top: 4vh;
 }
 
+@media only screen and (max-width: 900px) {
+  .footer__aside {
+    width: 100%;
+    padding: 4vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .footer__aside__blocs {
   color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .footer__aside__blocs {
+    padding-top: 2vh;
+  }
 }
 
 .footer__aside__menu {
@@ -378,6 +395,12 @@ header {
   font-size: 1.5em;
   padding: 0;
   margin: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer__aside__menu {
+    display: none;
+  }
 }
 
 .footer__aside__img {
