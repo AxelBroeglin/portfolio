@@ -2,7 +2,8 @@
     padding: 0;
 }
 .main-homepage{
-    padding: 4vh 10vw 0 10vw;
+    padding: 4vh 10vw 4vh 10vw;
+
 }
 
 .homepage{
@@ -248,14 +249,16 @@
 
 
   /***************** CONTACT *********************/
-
+.third-section{
+  @include p-bottom6;
+}
   .contact{
     width: 66%;
     @media only screen and (max-width: 900px) {
       width: 100%;
     }
     >*{
-      @include p-top2;
+      @include p-top1;
     }
     > p{
       color: $font;
