@@ -46,73 +46,94 @@
             <h1>My latest works</h1>
 
             <section class="works-container">
-                <article id="works-container__project">
-                    <h2>EHESP Conseil</h2>
-                    <p class="work-desc">A website created for an association, using Wordpress and Divi.</p>  <!-- To be hidden on mobile OR desk, to be decided -->
+                <article class="works-container__article">
+                    <h2 class="works-container__h2">EHESP Conseil</h2>
+                    <p class="work-desc">A website created fo r an association, using Wordpress and Divi.</p>  <!-- To be hidden on mobile OR desk, to be decided -->
                       <!--  Hover to be thought, cursor to be changed with "See site" or smth -->
-                        <picture>
+                        <picture class="works-container__picture">
                             
                             <source media="(max-width:767px)" srcset="./images/screenshot-ehesp-desk.png">
                             <img src="./images/screenshot-ehesp-desk.png" alt="" >
                             
                         </picture>
-                    <div class="button">
-                        <a class="button__link" href="projects\ehesp-conseil\overview.html">See<span> more</span></a>
+                    <div class="button-container">
+                        <a href="projects\ehesp-conseil\overview.html"><button>See more</button></a>
                     </div>
                 </article>
 
                 <!-- SECOND WORK -->
-                <article id="works-container__project">
-                    <h2>Advice Generator</h2>
+                <article class="works-container__article">
+                    <h2 class="works-container__h2">Advice Generator</h2>
                 <p class="work-desc"> A project that calls and manipulates an API using Javascript.</p>  <!-- To be hidden on mobile OR desk, to be decided -->
-                        <picture>
+                        <picture class="works-container__picture">
                             <source media="(max-width:767px)" srcset="./images/advice-generator-desk.png">
                             <img src="./images/advice-generator-desk.png" alt="" >
                         </picture>
-                    <div class="button">
-                        <a class="button__link" href="projects\advice-generator\overview.html">See<span> more</span></a>
+                    <div class="button-container">
+                        <a href="projects\advice-generator\overview.html"><button>See more</button></a>
                     </div>
                 </article>
 
                 <!-- THIRD WORK -->
-                <article id="works-container__project">
-                    <h2>Interactive Rating</h2>
+                <article class="works-container__article">
+                    <h2 class="works-container__h2">Interactive Rating</h2>
                 <p class="work-desc">An app to rate a service, with the display of a thank you screen.</p>  <!-- To be hidden on mobile OR desk, to be decided -->
                 <a href="">  <!--  Hover to be thought, cursor to be changed with "See site" or smth -->
-                        <picture>
+                        <picture class="works-container__picture">
                             <source media="(max-width:767px)" srcset="./images/interactive-rating-desk.png">
                             <img src="./images/interactive-rating-desk.png" alt="" >
                         </picture>
                     </a>
-                    <div class="button">
-                        <a class="button__link" href="projects\interactive-rating\overview.html">See<span> more</span></a>
+                    <div class="button-container">
+                        <a href="projects\interactive-rating\overview.html"><button>See more</button></a>
                     </div>
                 </article>
 
                 <!-- Fourth WORK -->
-                <article id="works-container__project">
-                    <h2>Chat App</h2>
+                <article class="works-container__article">
+                    <h2 class="works-container__h2">Chat App</h2>
                 <p class="work-desc">A pure HTML and CSS app, to work on positioning and alignment.</p>  <!-- To be hidden on mobile OR desk, to be decided -->
                 <a href="">  <!--  Hover to be thought, cursor to be changed with "See site" or smth -->
-                        <picture>
+                        <picture class="works-container__picture">
                             <source media="(max-width:767px)" srcset="./images/chat-app-desc.png">
                             <img src="./images/chat-app-desc.png" alt="" >
                         </picture>
                     </a>
-                    <div class="button">
-                        <a class="button__link" href="projects\chat-app\overview.html">See<span> more</span></a>
+                    <div class="button-container">
+                        <a href="projects\chat-app\overview.html"><button>See more</button></a>
                     </div>
                 </article>
             </section>
         </main>
 
 
-            <!-- FOOTER -->
-        <footer>
-            <p>Axel Broeglin</p>
-            <p>2022</p>
-            <img src="" alt="">
-            <a href="privacy-policy.html"><p>Privacy Policy</p></a>
+          <!-- FOOTER -->
+        <!-- <?php include('footer.php'); ?> -->
+        <footer class="footer">
+            <aside class="footer__aside">
+                <div class="footer__aside__blocs">
+                    <h2>Axel Broeglin</h2>
+                    <p>Front-End Déveloper</p>
+                    <a href="https://github.com/AxelBroeglin"><img class="footer__aside__img" src="./images/github-green.png" alt=""></a>
+                    <a href="https://pt.linkedin.com/in/axel-broeglin-b38810b2"><img class="footer__aside__img" src="./images/linkedin.png" alt=""></a>               
+                    <p class="footer__aside__legal-info">Copyright 2022 Axel Broeglin - <a href="privacy-policy.html">Privacy Policy</a></p>
+
+                </div>
+                <div class="footer__aside__blocs">
+                    <ul class="footer__aside__menu">
+                        <li>Home</li>
+                        <li>Projects</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer__aside__blocs">
+                    <p><span class="footer__aside__contact-info">Phone Number</span> <br>
+                        +351 962450736 </p>
+                    <p><span class="footer__aside__contact-info">Email address</span> <br>
+                    hello@axelbroeglin.dev</p>    
+                </div>
+            </aside>
         </footer>
        
         
