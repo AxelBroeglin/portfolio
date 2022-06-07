@@ -138,6 +138,77 @@ a:link, a:visited, a:hover, a:active {
   color: #2eb086;
 }
 
+/******* OVERLAY *****/
+.container-hover {
+  position: relative;
+}
+
+.container-hover > source, .container-hover > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.overlay__text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-30%, -50%);
+  transform: translate(-30%, -50%);
+}
+
+.overlay__text > p {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 2vh;
+}
+
+.overlay__picto-projects {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.overlay__img-container {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+}
+
+.overlay__img-container > figure {
+  max-width: 3em;
+  text-align: center;
+  color: white;
+  display: block;
+}
+
+.overlay__img-container > figure > figcaption {
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.container-hover:hover .overlay {
+  opacity: 1;
+}
+
 /**************** END OF GENERAL ************/
 @font-face {
   font-family: 'poppinsregular';
@@ -653,69 +724,6 @@ button:hover {
   .projects-grid__projects > h3 {
     padding-bottom: 1vh;
   }
-}
-
-.container-hover {
-  position: relative;
-}
-
-.container-hover > source, .container-hover img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  -webkit-transition: .2s ease;
-  transition: .2s ease;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.overlay__img-container {
-  width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1em;
-}
-
-.overlay__img-container > figure {
-  max-width: 3em;
-  text-align: center;
-  color: white;
-  display: block;
-}
-
-.overlay__img-container > figure > figcaption {
-  font-size: 0.7em;
-  text-align: center;
-}
-
-.container-hover:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  -webkit-transform: translate(-30%, -50%);
-  transform: translate(-30%, -50%);
-}
-
-.text > p {
-  color: white;
-  font-size: 20px;
-  padding-bottom: 2vh;
 }
 
 /************ END OF SECOND SECTION *************/
@@ -1533,7 +1541,7 @@ textarea:-moz-placeholder {
 }
 
 .works-container__picture {
-  padding-top: 2vh;
+  margin-top: 2vh;
 }
 
 .about > * {

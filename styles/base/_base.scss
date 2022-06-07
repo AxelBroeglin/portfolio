@@ -132,6 +132,66 @@ a:link, a:visited, a:hover, a:active {
   color:$main-green;
 }
 
+/******* OVERLAY *****/
+.container-hover{
+  position: relative;
+  >source, >img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  }
+  .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    &__text {
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 30%;
+      -webkit-transform: translate(-30%, -50%);
+      -ms-transform: translate(-30%, -50%);
+      transform: translate(-30%, -50%); 
+      >p{
+        color: white;
+        font-size: 20px;
+        @include p-bottom2;
+      }
+    }
+    &__picto-projects{
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    } 
+    &__img-container{
+      width: auto;
+      display: flex;
+      gap: 1em;
+      >figure{
+        max-width: 3em;
+        text-align: center;
+        color: white;
+        display: block;
+        >figcaption{
+          font-size: 0.7em;
+          text-align: center;        
+        }
+      }
+    }
+  }
+  .container-hover:hover .overlay {
+    opacity: 1;
+  }
 /**************** END OF GENERAL ************/
 
 
