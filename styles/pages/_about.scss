@@ -24,9 +24,6 @@
         }
 
         &__first-button{
-            color: $main-green;
-            background-color: white;
-            border: 1px solid $main-green;
             @media only screen and (max-width: 900px) {
                 margin-bottom: 1vh;;
             }

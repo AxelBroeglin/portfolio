@@ -14,3 +14,9 @@ button{
 button:hover{
     cursor: pointer;
 }
+
+.button-green{
+    color: $main-green;
+    background-color: white;
+    border: 1px solid $main-green;
+}
