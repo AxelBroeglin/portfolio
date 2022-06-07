@@ -378,6 +378,10 @@ header {
 }
 
 .footer__aside__blocs {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+  width: auto;
   color: white;
 }
 
@@ -435,6 +439,12 @@ button {
 
 button:hover {
   cursor: pointer;
+}
+
+.button-green {
+  color: #2eb086;
+  background-color: white;
+  border: 1px solid #2eb086;
 }
 
 #body-homepage {
@@ -1559,12 +1569,6 @@ textarea:-moz-placeholder {
 .about__scan-eat__button-container {
   gap: 1vw;
   padding-bottom: 6vh;
-}
-
-.about__scan-eat__first-button {
-  color: #2eb086;
-  background-color: white;
-  border: 1px solid #2eb086;
 }
 
 @media only screen and (max-width: 900px) {
