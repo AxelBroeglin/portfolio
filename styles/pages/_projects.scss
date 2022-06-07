@@ -20,6 +20,6 @@
         width: fit-content;
     }
     &__picture{
-        @include p-top2;
+        margin-top: 2vh;
     }
 }
