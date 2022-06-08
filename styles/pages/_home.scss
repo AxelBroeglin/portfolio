@@ -148,13 +148,15 @@
   }
 }
 .projects-grid{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-row-gap: 2em;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
   @media only screen and (min-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  grid-template-rows: 1fr;
+  &__projects{
+    width:auto;
+  }
   &__projects>h3{
     @include p-bottom2;
     @media only screen and (max-width: 900px) {
