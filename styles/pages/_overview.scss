@@ -13,8 +13,8 @@
         gap: 0px 0px; 
         grid-template-areas: 
           "header header"
-          "stack code"
-          "stack link"; 
+          "stack link"
+          "stack code"; 
       }
     &__col--header { grid-area: header; }
     &__col--stack { grid-area: stack; }

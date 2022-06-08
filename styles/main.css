@@ -1470,7 +1470,7 @@ textarea:-moz-placeholder {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
-      grid-template-areas: "header header" "stack code" "stack link";
+      grid-template-areas: "header header" "stack link" "stack code";
 }
 
 .project__col--header {
@@ -1488,13 +1488,13 @@ textarea:-moz-placeholder {
 }
 
 .project__col--code {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: code;
 }
 
 .project__col--link {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: link;
 }
