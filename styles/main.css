@@ -700,13 +700,13 @@ button:hover {
 }
 
 .projects-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-  grid-row-gap: 2em;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media only screen and (min-width: 900px) {
@@ -714,6 +714,10 @@ button:hover {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.projects-grid__projects {
+  width: auto;
 }
 
 .projects-grid__projects > h3 {
@@ -1542,6 +1546,10 @@ textarea:-moz-placeholder {
 
 .works-container__picture {
   margin-top: 2vh;
+}
+
+.about {
+  padding-bottom: 8vh;
 }
 
 .about > * {

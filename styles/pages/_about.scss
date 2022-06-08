@@ -1,4 +1,5 @@
 .about{
+    @include p-bottom8;
     >*{
         @include p-bottom2;
     }
