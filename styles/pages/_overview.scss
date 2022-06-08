@@ -7,13 +7,15 @@
     }
     &__desc{
         display: flex;
+        justify-content:space-between;
     }
     &__col-container{
         @include p-top2;
+        width: 30vw;
         display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr; 
         grid-template-rows: 1fr 1fr 1fr; 
-        gap: 0px 0px; 
+        gap: 0px 5px; 
         grid-template-areas: 
           "header header"
           "stack link"
