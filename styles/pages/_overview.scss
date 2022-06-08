@@ -5,10 +5,13 @@
     &__p{
         @include p-top1;
     }
+    &__desc{
+        display: flex;
+    }
     &__col-container{
         @include p-top2;
         display: grid; 
-        grid-template-columns: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr 1fr; 
         grid-template-rows: 1fr 1fr 1fr; 
         gap: 0px 0px; 
         grid-template-areas: 
