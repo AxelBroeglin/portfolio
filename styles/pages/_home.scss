@@ -224,6 +224,7 @@
         @media only screen and (max-width: 900px) {
         width: 100%;
         @include p-bottom2;
+        padding-left: 0;
         }
       }
       &__names{

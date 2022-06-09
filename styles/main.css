@@ -807,6 +807,7 @@ button:hover {
   .contact__container__contact-info {
     width: 100%;
     padding-bottom: 2vh;
+    padding-left: 0;
   }
 }
 
