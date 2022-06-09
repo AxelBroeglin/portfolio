@@ -7,7 +7,7 @@
     &__aside{
         display: flex;
         justify-content: space-between;
-        @media only screen and (max-width: 900px) {
+        @media only screen and (max-width: 770px) {
             width: 100%;
             padding: 4vh;
             flex-direction: column;
@@ -16,7 +16,6 @@
         @include p-bottom4;
         @include p-top4;
         &__blocs{
-            flex: 1 1 0px;
             width: auto;
             color: white;
             @media only screen and (max-width: 900px) {
