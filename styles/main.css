@@ -1530,8 +1530,13 @@ textarea:-moz-placeholder {
   padding-bottom: 2vh;
 }
 
+.project__pic-alt {
+  padding-top: 4vh;
+  padding-bottom: 2vh;
+}
+
 @media only screen and (min-width: 900px) {
-  .project__pic {
+  .project__pic-alt {
     display: none;
   }
 }

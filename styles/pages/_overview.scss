@@ -35,6 +35,10 @@
     &__pic{
         @include p-top4;
         @include p-bottom2;
+    }    
+    &__pic-alt{
+        @include p-top4;
+        @include p-bottom2;
         @media only screen and (min-width: 900px) {
             display: none;
         }
