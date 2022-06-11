@@ -8,6 +8,9 @@
     &__desc{
         display: flex;
         justify-content:space-between;
+        @media only screen and (max-width: 900px) {
+            flex-direction: column;
+        }
     }
     &__col-container{
         @include p-top2;
@@ -15,11 +18,15 @@
         display: grid; 
         grid-template-columns: 1fr 1fr; 
         grid-template-rows: 1fr 1fr 1fr; 
-        gap: 0px 5px; 
+        gap: 0px 5px;
         grid-template-areas: 
           "header header"
           "stack link"
           "stack code"; 
+        @media only screen and (max-width: 900px) {
+            grid-template-columns: 1fr; 
+            gap: 0px 6em;
+        }
       }
     &__col--header { grid-area: header; }
     &__col--stack { grid-area: stack; }
@@ -28,6 +35,17 @@
     &__pic{
         @include p-top4;
         @include p-bottom2;
+        @media only screen and (min-width: 900px) {
+            display: none;
+        }
+    }
+    &__video{      
+        max-width: 50%;
+        @include p-top4;
+        @include p-bottom2;
+        @media only screen and (max-width: 900px) {
+            display: none;
+        }
     }
     &__h2{
         @include p-top2;
