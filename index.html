@@ -21,7 +21,6 @@
         
             <!-- INTRODUCTION -->
             <section class="section-intro">
-                <!-- <?php include('header.php'); ?> -->
                 <header id="navbar-homepage">
                     <nav class="nav-mobile">
                         <div class="header-mobile">
@@ -227,19 +226,16 @@
                     <form class="contact" method="post" action="contact-form-process.php">
                         <div class="contact__container__names">
                             <div class="contact__containers">
-                                <input type="text" id="Firstname" name="Firstname" aria-label="Firstname" value="" class="contact__fields" aria-required="true" aria-invalid="false" placeholder="Your first name">
-                            </div>
-                            <div class="contact__containers">
-                                <input type="text" id="Lastname" name="Lastname" aria-label="Lastname" value="" class="contact__fields" aria-required="true" aria-invalid="false" placeholder="Your last name">
+                                <input for="Name" type="text" id="Name" name="Name" aria-label="Name" value="" class="contact__fields" aria-required="true" aria-invalid="false" placeholder="Your name">
                             </div>
                         </div>
 
                         <div>
-                            <input type="email"  id="Email" name="Email" aria-label="Email Address" value="" class="contact__fields contact__email" aria-required="true" aria-invalid="false" placeholder="Your Email Address">
+                            <input for="Email" type="email"  id="Email" name="Email" aria-label="Email Address" value="" class="contact__fields contact__email" aria-required="true" aria-invalid="false" placeholder="Your Email Address">
                         </div>
 
                         <div>
-                            <textarea id="Message" class="contact__message" name="Message" aria-label="Message" class=" aria-required="true" aria-invalid="false" placeholder="Your Message" maxlength="3000" required></textarea>
+                            <textarea for="Message" id="Message" class="contact__message" name="Message" aria-label="Message" class=" aria-required="true" aria-invalid="false" placeholder="Your Message" maxlength="3000" required></textarea>
                         </div>
                         
                         <div class="button-container">
@@ -280,10 +276,10 @@
                 </div>
                 <div class="footer__aside__blocs">
                     <ul class="footer__aside__menu">
-                        <li>Home</li>
-                        <li>Projects</li>
-                        <li>About</li>
-                        <li>Contact</li>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="projects.html">PROJECTS</a></li>
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="index.html#contact">CONTACT</a></li>
                     </ul>
                 </div>
             </aside>
