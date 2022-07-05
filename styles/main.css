@@ -1331,7 +1331,7 @@ textarea:-moz-placeholder {
   top: 15vh;
   padding: 30px;
   border-radius: 15px;
-  max-width: 340px;
+  max-width: 370px;
 }
 
 .main-container-ir__star-container {
@@ -1354,6 +1354,11 @@ textarea:-moz-placeholder {
 .main-container-ir__star-container__star {
   width: 15px;
   height: 15px;
+}
+
+.main-container-ir__h1 {
+  text-align: left;
+  padding-top: 0;
 }
 
 .main-container-ir__h1, .main-container-ir .ty-state__h1 {
@@ -1488,7 +1493,9 @@ textarea:-moz-placeholder {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 5px;
-      grid-template-areas: "header header" "stack link" "stack code";
+      grid-template-areas: "header header"
+ "stack link"
+ "stack code";
 }
 
 @media only screen and (max-width: 900px) {
