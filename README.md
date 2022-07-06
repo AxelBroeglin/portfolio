@@ -27,7 +27,7 @@
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot]([./img/screenshot.png](https://raw.githubusercontent.com/AxelBroeglin/portfolio/main/portfolio-screenshot.png))
 
 
 ## Project Status
