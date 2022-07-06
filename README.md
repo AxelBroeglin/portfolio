@@ -28,6 +28,7 @@
 
 ## Screenshots
 ![Example screenshot]([./img/screenshot.png](https://raw.githubusercontent.com/AxelBroeglin/portfolio/main/portfolio-screenshot.png))
+![portfolio-screenshot](https://user-images.githubusercontent.com/16608247/177632776-68babc2d-d9b1-4fd1-8cf1-1f6ff0d99c0a.png)
 
 
 ## Project Status
