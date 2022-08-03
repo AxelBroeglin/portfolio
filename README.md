@@ -13,10 +13,8 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
+- My portoflio, allows me to show my work
+- Contact info and more about myself
 
 
 ## Technologies Used
