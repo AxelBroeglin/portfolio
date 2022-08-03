@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Axel Broeglin Front End Developer</title>
+
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+
+        <!-- FAVICON -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../images/favicon/site.webmanifest">
+    </head>
+<body>
+    <!-- <?php include('header.php'); ?> -->
+    <header class="navbar-base">
+        <nav class="nav-mobile">
+            <div class="header-mobile">
+                <a href="index.html"><h2>AXEL BROEGLIN</h2></a>
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+            </div>
+            <div class="menu-mobile">
+                <ul class="menu-mobile__ul">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="http://127.0.0.1:5500/projects.html">PROJECTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                </ul>
+                <p class="menu-mobile__info">Based in Europe <br>
+                Speaks English <br>
+                and French</p>
+            </div>
+
+            <div class="menu-desk">
+                <ul class="menu-desk__ul">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="http://127.0.0.1:5500/projects.html">PROJECTS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+
+    <!-------------- Main -------------->
+    <main id="main-container">
+        <h1 class="project__h1">Howlongtoburn</h1>
+        
+        <!-- Quick description -->
+        <p class="project__p">This a personal project that I wanted to do as a challenge, to work with both and API and a JSON file, and to allow us to manipulate the data.</p>
+        
+        <article class="project__desc">
+            <!-- Project technical description and links -->
+            <div class="project__col-container">
+                <div class="project__col project__col--header">
+                    <h3>Type</h3>
+                    <p>Personal project</p>
+                </div>
+                <div class="projec__col project__col--stack">
+                    <h3>Stack</h3>
+                    <p>HTML <br>
+                    CSS <br>
+                    Javascript<br>
+                    API<br>
+                    JSON</p>
+                </div>
+                <div class="project__col project__col--code">
+                    <h3>Code</h3>
+                    <a href="https://github.com/AxelBroeglin/howlongtoburn.git" target="_blank" class="link">GitHub</a>
+                </div>
+                <div class="project__col project__col--link">
+                    <h3>Link</h3>
+                    <a href="" target="" class="link">Project (soon)</a>
+                </div>
+            </div>
+
+            <!-- Application screenshot -->
+            <picture class="project__pic-alt">
+                <img src="" alt="No screenshot for the moment" >
+            </picture>
+            <video class="project__video" loop autoplay muted>
+                <source src="" type="video/mp4">
+            </video>
+        </article>
+
+        <!-------------- Explanations -------------->
+        <h2 class="project__h2">Project purpose and goal</h2>
+        <p class="project__p">This project allows user to determine how many minutes of practicing the activity of his choice it will take to burn the amount of calories contained in 100 grams of the food of his choice.</p>
+
+        <h2 class="project__h2">Web Stack choice</h2>
+        <p class="project__p">.
+        </p>
+
+        <h2 class="project__h2">Thought process</h2>
+        <p class="project__p">I planned most of the tasks to be done before the project started, in order to be as prepared as possible. I thought that a maximum of preparation on my side could compensate for the lack of availability of the firm due to its activity.</p>
+
+        <h2 class="project__h2">Lesson learned</h2>
+        <p class="project__p">Unfortunately the perhaps too much planning coupled with long delays in client feedbacks prevented me from having a great flexibility on this project, which took 6 months to see the day in total.
+        I would know in the future that it is better to plan less, or at least to take the time to create <span class="span-bold">a more flexible organization</span>, in order to compensate for the possible lack of availability of a firm like this.
+        </p>
+    </main>
+    
+    <!-------------- Footer -------------->
+    <!-- <?php include('footer.php'); ?> -->
+    <footer class="footer">
+        <aside class="footer__aside">
+            <div class="footer__aside__blocs">
+                <h2>Axel Broeglin</h2>
+                <p>Front-End Déveloper</p>
+                <a href="https://github.com/AxelBroeglin"><img class="footer__aside__img" src="../../images/github-green.png" alt="GitHub icon"></a>
+                <a href="https://pt.linkedin.com/in/axel-broeglin-b38810b2"><img class="footer__aside__img" src="../../images/linkedin.png" alt="Linkedin icon"></a>               
+                <p class="footer__aside__legal-info">Copyright 2022 Axel Broeglin - <a href="privacy-policy.html">Privacy Policy</a></p>
+            </div>
+
+            <div class="footer__aside__blocs">
+                <p><span class="footer__aside__contact-info">Phone Number</span> <br>
+                    +351 962450736 </p>
+                <p><span class="footer__aside__contact-info">Email address</span> <br>
+                hello@axelbroeglin.dev</p>    
+            </div>
+            <div class="footer__aside__blocs">
+                <ul class="footer__aside__menu">
+                    <li>Home</li>
+                    <li>Projects</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </aside>
+    </footer>
+    
+    
+    <script src="./script/app.js"></script>
+
+</body>
+</html>
