@@ -26,10 +26,9 @@
 
 .container-tech{
     display: flex;
-    justify-content: space-around;
     @include p-top2;
 }
 
 .project-tech{
-    padding-right: 10vh;
+    padding-right: 2vh;
 }

@@ -1256,12 +1256,11 @@ textarea:-moz-placeholder {
 
 .container-tech {
   display: flex;
-  justify-content: space-around;
   padding-top: 2vh;
 }
 
 .project-tech {
-  padding-right: 10vh;
+  padding-right: 2vh;
 }
 
 .about {
