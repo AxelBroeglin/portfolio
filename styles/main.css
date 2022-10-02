@@ -1261,6 +1261,7 @@ textarea:-moz-placeholder {
 
 .project-tech {
   padding-right: 2vh;
+  font-weight: bold;
 }
 
 .about {
